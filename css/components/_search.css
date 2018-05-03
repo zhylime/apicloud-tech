@@ -1,0 +1,10 @@
+.c-search{
+  padding: 10px 10px;
+}
+.c-search__input{
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  background: #ccc;
+}
