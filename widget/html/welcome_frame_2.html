@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+        <title>APICloud APP</title>
+        <link rel="stylesheet" type="text/css" href="../css/api.css" />
+        <link rel="stylesheet" type="text/css" href="../css/components/welcome.css" />
+    </head>
+
+    <body>
+        <header id="footer">
+            <div class="skip" tapmode="highlight" onclick="fnStart()">
+                <span>skip</span>
+            </div>
+        </header>
+    </body>
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript" src="../script/common.js"></script>
+    <script type="text/javascript">
+        apiready = function() {
+            fnReady();
+        };
+
+        function fnStart() {
+            api.closeFrameGroup({
+                name: 'welcome_group'
+            });
+        };
+    </script>
+
+</html>

@@ -47,7 +47,7 @@
             style: 'dark',
             color: '#6ab494'
         });
-        funIniGroup();
+        fnOpenWelcome();
     }
 
     function funIniGroup(){
@@ -98,4 +98,30 @@
             index: index
         });
     }
+
+    // 欢迎页面
+    function fnOpenWelcome() {
+        var frames = [];
+        for (var i = 1; i <= 3; i++) {
+            frames.push({
+                name: 'welcome_frame_' + i,
+                url: './html/welcome_frame_' + i + '.html',
+                bounces: false,
+                bgColor: './image/welcome/' + i + '.png'
+            });
+        }
+
+        api.openFrameGroup({
+            name: 'welcome_group',
+            scrollEnabled: true,
+            rect: {
+                x: 0,
+                y: 0,
+                w: 'auto',
+                h: 'auto'
+            },
+            index: 0,
+            frames: frames
+        });
+    };
 </script>
