@@ -30,10 +30,10 @@
     </div>
     <div id="footer" class="border-t">
         <ul class="flex-wrap" >
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" >项目</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >消息</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >发现</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >我的</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" data-url="project-main">项目</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame1">消息</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="discovery-main">发现</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame2">我的</li>
         </ul>
     </div>
 </div>
@@ -47,6 +47,7 @@
             style: 'dark',
             color: '#6ab494'
         });
+
         funIniGroup();
         fnOpenWelcome();
     }
@@ -55,9 +56,11 @@
         var eHeaderLis = $api.domAll('header li'),
             frames = [];
         for (var i = 0,len = eHeaderLis.length; i < len; i++) {
+          var _name = $api.attr($api.domAll('#footer li')[i], 'data-url'),
+              _url = _name + '.html';
                 frames.push( {
-                    name: 'frame'+i,
-                    url: './html/frame'+i+'.html',
+                    name: _name,
+                    url: './html/' + _url,
                     bgColor : 'rgba(0,0,0,.2)',
                     bounces:true
                 } )
