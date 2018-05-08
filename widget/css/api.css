@@ -79,3 +79,236 @@ td,th {
 .loading_more:after {
 	content: '加载更多';	
 }
+@font-face {
+	font-family: "tech_iconfont";
+	src: url('./fonts/tech-iconfont.ttf') format('truetype');
+}
+
+[class^="tech-"], [class*=" tech-"] {
+  font-family: 'tech_iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.tech-icon_wenjianjia_tupian:before {
+  content: "\e900";
+}
+.tech-icon_xiangmu:before {
+  content: "\e901";
+}
+.tech-icon_huiyuan:before {
+  content: "\e902";
+}
+.tech-icon_fujin:before {
+  content: "\e903";
+}
+.tech-icon_flag:before {
+  content: "\e904";
+}
+.tech-icon_excel:before {
+  content: "\e905";
+}
+.tech-icon_hot:before {
+  content: "\e906";
+}
+.tech-icon_wenjianjia_wenxian:before {
+  content: "\e907";
+}
+.tech-icon_wenjianjia_shoucang:before {
+  content: "\e908";
+}
+.tech-icon_wenjianjia_shipin:before {
+  content: "\e909";
+}
+.tech-icon_wenjianjia_geren:before {
+  content: "\e90a";
+}
+.tech-icon_guowai:before {
+  content: "\e90c";
+}
+.tech-icon_close:before {
+  content: "\e90e";
+}
+.tech-icon_diandian:before {
+  content: "\e90f";
+}
+.tech-icon_duigou:before {
+  content: "\e910";
+}
+.tech-icon_edit:before {
+  content: "\e911";
+}
+.tech-icon_erweima:before {
+  content: "\e912";
+}
+.tech-icon_fangdajing:before {
+  content: "\e913";
+}
+.tech-icon_faxian:before {
+  content: "\e914";
+}
+.tech-icon_img:before {
+  content: "\e915";
+}
+.tech-icon_jia_close:before {
+  content: "\e916";
+}
+.tech-icon_jia_wenzi:before {
+  content: "\e917";
+}
+.tech-icon_jia:before {
+  content: "\e918";
+}
+.tech-icon_jiamokuai:before {
+  content: "\e919";
+}
+.tech-icon_jiantou_down:before {
+  content: "\e91a";
+}
+.tech-icon_jiantou_up:before {
+  content: "\e91b";
+}
+.tech-icon_jiantou:before {
+  content: "\e91c";
+}
+.tech-icon_jiaruxiaozu:before {
+  content: "\e91d";
+}
+.tech-icon_layersucces:before {
+  content: "\e91e";
+}
+.tech-icon_lock:before {
+  content: "\e91f";
+}
+.tech-icon_luyin:before {
+  content: "\e920";
+}
+.tech-icon_map:before {
+  content: "\e921";
+}
+.tech-icon_map2:before {
+  content: "\e922";
+}
+.tech-icon_message:before {
+  content: "\e923";
+}
+.tech-icon_mokuai:before {
+  content: "\e924";
+}
+.tech-icon_paishe:before {
+  content: "\e925";
+  color: #515151;
+}
+.tech-icon_people:before {
+  content: "\e926";
+}
+.tech-icon_saomiao:before {
+  content: "\e927";
+}
+.tech-icon_select:before {
+  content: "\e928";
+}
+.tech-icon_shezhi:before {
+  content: "\e929";
+}
+.tech-icon_sucai:before {
+  content: "\e92a";
+  color: #666;
+}
+.tech-icon_text:before {
+  content: "\e92b";
+}
+.tech-icon_tianjiaziliao:before {
+  content: "\e92c";
+  color: #666;
+}
+.tech-icon_tongzhi:before {
+  content: "\e92d";
+}
+.tech-icon_tuichuxiaozu:before {
+  content: "\e92e";
+}
+.tech-icon_unlock:before {
+  content: "\e92f";
+}
+.tech-icon_video:before {
+  content: "\e930";
+}
+.tech-icon_video2:before {
+  content: "\e931";
+  color: #666;
+}
+.tech-icon_wenben:before {
+  content: "\e932";
+}
+.tech-icon_wenjianjia:before {
+  content: "\e933";
+  color: #606060;
+}
+.tech-icon_word:before {
+  content: "\e934";
+  color: #36a1e5;
+}
+.tech-icon_yuyintowenzi:before {
+  content: "\e935";
+}
+.tech-icon_search:before {
+  content: "\e90b";
+}
+.icon-image:before {
+  content: "\e90d";
+}
+.icon-camera:before {
+  content: "\e936";
+}
+.icon-music:before {
+  content: "\e941";
+}
+.icon-film:before {
+  content: "\e942";
+}
+.icon-bin:before {
+  content: "\e9ac";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-move-up:before {
+  content: "\ea46";
+}
+.icon-move-down:before {
+  content: "\ea47";
+}
+.icon-sort-alpha-asc:before {
+  content: "\ea48";
+}
+.icon-sort-alpha-desc:before {
+  content: "\ea49";
+}
+.icon-sort-numeric-asc:before {
+  content: "\ea4a";
+}
+.icon-sort-numberic-desc:before {
+  content: "\ea4b";
+}
+.icon-sort-amount-asc:before {
+  content: "\ea4c";
+}
+.icon-sort-amount-desc:before {
+  content: "\ea4d";
+}
+.icon-renren:before {
+  content: "\ea99";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
