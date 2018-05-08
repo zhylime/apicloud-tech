@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/api.css"/>
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <link rel="stylesheet" type="text/css" href="./css/header_footer.css"/>
+    <link rel="stylesheet" type="text/css" href="./wgt/aui/css/aui.css"/>
 
     <style>
         .flex-con{
@@ -21,6 +22,7 @@
         <ul>
             <li class="border-b active" >项目</li>
             <li class="border-b" >消息</li>
+            <li class="border-b" >添加</li>
             <li class="border-b" >发现</li>
             <li class="border-b" >我的</li>
         </ul>
@@ -30,10 +32,27 @@
     </div>
     <div id="footer" class="border-t">
         <ul class="flex-wrap" >
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" data-url="project-main">项目</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame1">消息</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="discovery-main">发现</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame2">我的</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" data-url="project-main">
+                <div class="aui-badge"></div>
+                <span class="tech-icon_xiangmu"></span>
+                <div class="aui-grid-label">项目</div>
+            </li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame1">
+                <div class="aui-badge">88</div>
+                <span class="tech-icon_message"></span>
+                <div class="aui-grid-label">消息</div>
+            </li>
+            <li tapmode="hover" class="flex-con">
+                <span class="tech-icon_jia"></span>
+            </li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="discovery-main">
+                <span class="tech-icon_faxian"></span>
+                <div class="aui-grid-label">发现</div>
+            </li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame2">
+                <span class="tech-icon_people"></span>
+                <div class="aui-grid-label">我的</div>
+            </li>
         </ul>
     </div>
 </div>

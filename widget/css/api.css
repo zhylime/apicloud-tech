@@ -96,7 +96,9 @@ td,th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.tech-icon_xiangmu:before {
+  content: "\e937";
+}
 .tech-icon_guowai:before {
   content: "\e900";
 }
@@ -214,7 +216,7 @@ td,th {
 .tech-icon_word:before {
   content: "\e928";
 }
-.tech-icon_xiangmu:before {
+.tech-icon_xiangmu2:before {
   content: "\e929";
 }
 .tech-icon_yuyintowenzi:before {
