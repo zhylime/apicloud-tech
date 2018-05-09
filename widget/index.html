@@ -33,7 +33,7 @@
     <div id="footer" class="border-t">
         <ul class="flex-wrap" >
             <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" data-url="project-main">
-                <div class="aui-badge"></div>
+                <div class="aui-dot"></div>
                 <span class="tech-icon_xiangmu"></span>
                 <div class="aui-grid-label">项目</div>
             </li>
@@ -42,7 +42,7 @@
                 <span class="tech-icon_message"></span>
                 <div class="aui-grid-label">消息</div>
             </li>
-            <li tapmode="hover" class="flex-con">
+            <li tapmode="hover" class="flex-con" onclick="openCreateOverlay( this );">
                 <span class="tech-icon_jia"></span>
             </li>
             <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="discovery-main">
@@ -59,6 +59,7 @@
 </body>
 </html>
 <script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript" src="script/common.js"></script>
 <script type="text/javascript">
     apiready = function () {
         $api.fixStatusBar( $api.dom('header') );
@@ -146,4 +147,5 @@
             frames: frames
         });
     };
+
 </script>

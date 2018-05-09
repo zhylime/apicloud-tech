@@ -1,0 +1,11 @@
+html,
+body {
+    background: #fff;
+}
+
+.c-content__create--text { text-align: center; padding: 120px 0; font-size: .7rem ; color: #adadad; }
+.c-content__create--wrap.aui-grid [class*=aui-col-xs-]:active { background-color: transparent; }
+.c-content__create--wrap .aui-grid-label { color: #4f4f4f; font-size: .6rem}
+.c-content__create--btnGroup i { border: 1px solid #4f4f4f; padding: 1rem; border-radius: 2rem; display: inline-block; font-size: 1rem}
+.c-content__create--close i{font-size: 2rem; color: #cacaca}
+.c-content__create--close [class*=aui-col-xs-] { padding: 0.1rem 0; }
