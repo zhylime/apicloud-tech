@@ -5,13 +5,57 @@
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>文档</title>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui-flex.css"/>
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_discovery.css"/>
     <style>
         .empty{ text-align: center; padding: 120px 0; }
     </style>
 </head>
-<body>
-    <div class="empty">文档</div>
+<body class="frame_container c-discovery">
+    <div class="c-search">
+      <form>
+        <input type="text" name="search_input" class="c-search__input" placeholder="项目搜索"/>
+      </form>
+    </div>
+
+    <div class="c-carousel">
+
+    </div>
+    <div class="c-discovery__icons aui-flex-col">
+      <div class="aui-flex-item-3 txt--c">
+        <a>
+          <div class="icon-border"><i class="tech-icon_flag icon"></i></div>
+          <span>营地</span>
+        </a>
+      </div>
+
+      <div class="aui-flex-item-3 txt--c">
+        <a>
+          <div class="icon-border"><i class="tech-icon_guowai icon"></i></div>
+          <span>国外</span>
+        </a>
+      </div>
+
+      <div class="aui-flex-item-3 txt--c">
+        <a>
+          <div class="icon-border"><i class="tech-icon_fujin icon"></i></div>
+          <span>附近</span>
+        </a>
+      </div>
+
+      <div class="aui-flex-item-3 txt--c">
+        <a>
+          <div class="icon-border"><i class="tech-icon_hot icon"></i></div>
+          <span>热门</span>
+        </a>
+      </div>
+
+    </div>
+
 </body>
 </html>
