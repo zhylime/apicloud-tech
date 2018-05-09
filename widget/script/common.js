@@ -11,14 +11,10 @@ function fnStart() {
 // open overlay
 function openCreateOverlay(){
     var frames = [];
-    frames.push({
-        name: 'overlay-create',
-        url: './html/overlay-create.html',
-        bounces: false,
-    });
-    api.openFrameGroup({
+    api.openFrame({
         name: 'overlay-create',
         scrollEnabled: true,
+        url: './html/overlay-create.html',
         rect: {
             x: 0,
             y: 0,
@@ -26,13 +22,31 @@ function openCreateOverlay(){
             h: 'auto'
         },
         index: 1,
-        frames: frames
+        animation : {
+	        type : 'movein',
+	        subType : 'from_bottom',
+	        duration : 300
+        },
     });
 };
 
 // close overlay
 function closeCreateOverlay(){
-    api.closeFrameGroup({
+    api.closeFrame({
         name: 'overlay-create'
     });
 };
+
+// todo scan QR 
+function openScan(){
+	var FNScanner = api.require('FNScanner');
+	FNScanner.open({
+	    autorotation: true
+	}, function(ret, err) {
+	    if (ret) {
+	        alert(JSON.stringify(ret));
+	    } else {
+	        alert(JSON.stringify(err));
+	    }
+	});
+}
