@@ -1,0 +1,11 @@
+.project-tab__header {
+	background-color: #fff;
+	color: #3a3a3a;
+	padding: 0 .5rem;
+}
+.project-tab__header a {
+	color: #3a3a3a;
+}
+.project-tab__header .tech-icon_diandian {
+	font-weight: bold;
+}

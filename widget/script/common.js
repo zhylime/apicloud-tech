@@ -53,27 +53,36 @@ function openScan(){
 var headHeight;
 
 function fnSearch() {
-  api.openFrame({
-    name: 'search_home',
-    scrollEnabled: true,
-    url: 'search-home.html',
-    rect: {
-        x: 0,
-        y: 0,
-        w: 'auto',
-        h: 'auto'
-    },
-    index: 1,
-    animation : {
-      type : 'movein',
-      subType : 'from_right',
-      duration : 300
-    },
-  });
+    var delay = 0;
+    if(api.systemType != 'ios'){
+        delay = 300;
+    }
+    api.openWin({
+        name: 'search-home',
+        url: 'search-home.html',
+        bounces:false,
+        delay: delay,
+        slidBackEnabled:true,
+        vScrollBarEnabled:false
+    });
 }
 
 function closeSearch(){
-    api.closeFrame({
-        name: 'search_home'
-    });
+    api.closeWin({
+        });
 };
+
+function openWin(name){
+    var delay = 0;
+    if(api.systemType != 'ios'){
+        delay = 300;
+    }
+    api.openWin({
+        name: ''+name+'',
+        url: ''+name+'.html',
+        bounces:false,
+        delay: delay,
+        slidBackEnabled:true,
+        vScrollBarEnabled:false
+    });
+}
