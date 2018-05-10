@@ -50,23 +50,6 @@ function openScan(){
 	});
 }
 
-var headHeight;
-
-function fnSearch() {
-    var delay = 0;
-    if(api.systemType != 'ios'){
-        delay = 300;
-    }
-    api.openWin({
-        name: 'search-home',
-        url: 'search-home.html',
-        bounces:false,
-        delay: delay,
-        slidBackEnabled:true,
-        vScrollBarEnabled:false
-    });
-}
-
 function closeSearch(){
     api.closeWin({
         });
@@ -75,7 +58,7 @@ function closeSearch(){
 function openWin(name){
     var delay = 0;
     if(api.systemType != 'ios'){
-        delay = 300;
+        delay = 30;
     }
     api.openWin({
         name: ''+name+'',
