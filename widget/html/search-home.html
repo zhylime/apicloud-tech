@@ -12,6 +12,7 @@
 </head>
 <body class="frame_container">
     <div class="aui-searchbar c-search" id="search">
+        <div class="aui-iconfont aui-icon-left c-search__btn-back" onclick="closeSearch()"></div>
         <div class="aui-searchbar-input aui-border-radius c-search__input">
             <i class="aui-iconfont aui-icon-search"></i>
             <input type="search" placeholder="请输入搜索内容" id="search-input">
@@ -29,22 +30,7 @@
     apiready = function() {
         fnReady();
     };
-    var headHeight;
-
-    function fnSearch() {
-        headHeight = getHeaderHeight();
-        api.openFrame({
-            name: 'search_home',
-            url: 'search_home.html',
-            bounces: true,
-            rect: {
-                x: 0,
-                y: headHeight,
-                w: 'auto',
-                h: api.winHeight - headHeight
-            }
-        });
-    }
+    
     var searchBar = document.querySelector(".aui-searchbar");
     var searchBarInput = document.querySelector(".aui-searchbar input");
     var searchBarBtn = document.querySelector(".aui-searchbar .aui-searchbar-btn");

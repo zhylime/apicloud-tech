@@ -17,9 +17,24 @@
 	line-height: 1.2rem: 
 }
 
-.c-content__pic img{
-	padding: 0 .1rem;
-	margin: 5px 0; 
+.c-content__pic {
+	margin: .4rem 0;
+	height: 4rem;
+}
+
+.c-content__pic--item {
+	height: 4rem;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+    box-sizing: border-box;
+    float: left;
+    width: 23%;
+    margin-right:2%;
+}
+
+.c-content__pic--item:last-child {
+	margin-right: 0;
 }
 
 .c-content__detail span{

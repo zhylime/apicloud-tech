@@ -33,6 +33,10 @@ body {
 .c-search .c-search__btn {
 	padding-right: 0; 
 }
+.c-search .c-search__btn-back {
+	font-size: 1.2rem;
+	display: inline-block;
+}
 .c-search .c-search__btn-clear {
 	top: 8px;
 }

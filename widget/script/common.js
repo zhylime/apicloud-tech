@@ -49,3 +49,31 @@ function openScan(){
 	    }
 	});
 }
+
+var headHeight;
+
+function fnSearch() {
+  api.openFrame({
+    name: 'search_home',
+    scrollEnabled: true,
+    url: 'search-home.html',
+    rect: {
+        x: 0,
+        y: 0,
+        w: 'auto',
+        h: 'auto'
+    },
+    index: 1,
+    animation : {
+      type : 'movein',
+      subType : 'from_right',
+      duration : 300
+    },
+  });
+}
+
+function closeSearch(){
+    api.closeFrame({
+        name: 'search_home'
+    });
+};
