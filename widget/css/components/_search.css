@@ -1,10 +1,18 @@
-.c-search{
-  padding: 10px 10px;
+html,
+body {
+    background-color: #fff;
 }
-.c-search__input{
-  width: 90%;
-  height: 50px;
-  margin: auto;
-  display: block;
-  background: #ccc;
+.c-search{
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.c-search__redirect {
+	text-align: center;
+	display: block;
+	background-color: #f6f6f6;
+	margin: 0;
+	border-radius: 0;
+	height: 2rem;
+	line-height: 2rem;
 }

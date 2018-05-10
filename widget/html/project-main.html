@@ -8,39 +8,119 @@
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
     <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
-    <style>
-        .empty{ text-align: center; padding: 120px 0; }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
 </head>
 <body class="frame_container">
-    <div class="c-search">
-      <form>
-        <input type="text" name="search_input" class="c-search__input" placeholder="项目搜索"/>
-      </form>
-    </div>
-
-    <div class="c-content">
-      <h2>探究类研究性学习报告</h2>
-      <div class="c-content__body">
-        <h3 class="txt-grey">北京市第六十六中学</h3>
-        <div class="flex-wrap">
-          <div class="l-w__60p flex-wrap">
-            <div class="flex-con l-pad__r-10">
-              <img src="../image/placeholder.jpg" alt="image" class="l-w__100p">
-            </div>
-            <div class="flex-con l-pad__r-10">
-              <img src="../image/placeholder.jpg" alt="image" class="l-w__100p">
-            </div>
-            <div class="flex-con">
-              <img src="../image/placeholder.jpg" alt="image" class="l-w__100p">
-            </div>
-          </div>
-          <div class="l-w__40p"></div>
-        </div>
+    <div class="aui-searchbar c-search" id="search">
+      <div class="aui-searchbar-input aui-border-radius c-search__redirect" onclick="fnSearch()">
+          <i class="aui-iconfont aui-icon-search"></i>
+          <span>项目搜索</span>
       </div>
     </div>
+
+    <article class="c-content">
+      <h2 class="c-content__title">北京植物园生长观察报告</h2>
+      <h3 class="c-content__subTitle">北京市第六十六中学</h3>
+      <div class="c-content__pic">
+        <div class="aui-row">
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_1.jpg" alt="image">
+          </div>
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_2.jpg" alt="image">
+          </div>
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_3.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+      <div class="c-content__detail aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            未提交
+          </div>
+      </div>
+    </article>
+        <article class="c-content">
+      <h2 class="c-content__title">十二中研究性学习报告</h2>
+      <h3 class="c-content__subTitle">北京市绿野科技示范基地</h3>
+      <div class="c-content__pic">
+        <div class="aui-row">
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_4.jpg" alt="image">
+          </div>
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_5.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+      <div class="c-content__detail aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            已提交
+          </div>
+      </div>
+    </article>
+    <article class="c-content c-content__recommend">
+      <h2 class="c-content__title">自制大理石纹路的丝巾科学手工实验</h2>
+      <h3 class="c-content__subTitle">北京市第一六一中学</h3>
+      <div class="c-content__recommend--closeBtn tech-icon_close"></div>
+      <div class="c-content__pic">
+        <div class="aui-row">
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_6.jpg" alt="image">
+          </div>
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_7.jpg" alt="image">
+          </div>
+          <div class="aui-col-xs-2">
+            <img src="../image/project/pic_8.jpg" alt="image">
+          </div>
+        </div>
+      </div>
+      <div class="c-content__detail aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            <label class="c-content__recommend--label">开放课</label>
+          </div>
+      </div>
+    </article>
+    
 </body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        fnReady();
+    };
+    var headHeight;
+
+    function fnSearch() {
+      api.openFrame({
+        name: 'search_home',
+        scrollEnabled: true,
+        url: 'search-home.html',
+        rect: {
+            x: 0,
+            y: 0,
+            w: 'auto',
+            h: 'auto'
+        },
+        index: 1,
+        animation : {
+          type : 'movein',
+          subType : 'from_right',
+          duration : 300
+        },
+      });
+   }
+</script>
 </html>

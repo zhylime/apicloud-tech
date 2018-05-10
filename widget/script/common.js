@@ -10,7 +10,6 @@ function fnStart() {
 
 // open overlay
 function openCreateOverlay(){
-    var frames = [];
     api.openFrame({
         name: 'overlay-create',
         scrollEnabled: true,
