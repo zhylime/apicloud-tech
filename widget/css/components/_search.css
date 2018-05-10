@@ -16,3 +16,23 @@ body {
 	height: 2rem;
 	line-height: 2rem;
 }
+
+.c-search__input {
+	background-color: #f6f6f6;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 0;
+	display: block;
+}
+
+.c-search__input input{
+	display: inline-block;
+	width: 80%;
+}
+
+.c-search .c-search__btn {
+	padding-right: 0; 
+}
+.c-search .c-search__btn-clear {
+	top: 8px;
+}
