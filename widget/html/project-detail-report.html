@@ -9,23 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/components/_project-tab.css" />
 </head>
 <body>
-    <div class="aui-tab project-tab__option" id="tab">
-        <div class="aui-tab-item aui-active">报告</div>
-        <div class="aui-tab-item">素材</div>
-        <div class="aui-tab-item">消息</div>
-        <div class="aui-tab-item">成员</div>
-    </div>
+    <h3>日期：2018-09-30</h3>
 </body>
 <script type="text/javascript" src="../script/api.js" ></script>
-<script type="text/javascript" src="../wgt/aui/script/aui-tab.js" ></script>
 <script type="text/javascript">
     apiready = function(){
         api.parseTapmode();
     }
-    var tab = new auiTab({
-        element:document.getElementById("tab"),
-    },function(ret){
-        console.log(ret)
-    });
+    
 </script>
 </html>
