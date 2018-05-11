@@ -5,50 +5,71 @@
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>文档</title>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
     <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/api.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
     <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/components/_discovery.css"/>
-    <style>
-        .empty{ text-align: center; padding: 120px 0; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/pages/_discovery.css"/>
 </head>
-<body class="frame_container c-discovery">
-    <div class="c-search">
-      <form>
-        <input type="text" name="search_input" class="c-search__input" placeholder="项目搜索"/>
-      </form>
+<body class="aui-content p-discovery">
+  <div class="aui-searchbar c-search" id="search">
+    <div class="aui-searchbar-input aui-border-radius c-search__redirect" onclick="openWin('search-home')">
+        <i class="aui-iconfont aui-icon-search"></i>
+        <span>项目搜索</span>
     </div>
-
-    <div class="c-carousel">
-
+  </div>
+    <!-- slider -->
+    <div class="p-discovery__slider" id="discovery-slider">
+      <div class="aui-slide-wrap" >
+        <div class="aui-slide-node">
+          <img src="../image/discovery-carousel-img1.jpg">
+          <div class="txt-overlay aui-ellipsis-1">
+            人类研究中心奇特实验
+          </div>
+        </div>
+        <div class="aui-slide-node">
+          <img src="../image/discovery-carousel-img1.jpg">
+          <div class="txt-overlay aui-ellipsis-1">
+            人类研究中心奇特实验2
+          </div>
+        </div>
+        <div class="aui-slide-node">
+          <img src="../image/discovery-carousel-img1.jpg">
+          <div class="txt-overlay aui-ellipsis-1">
+            人类研究中心奇特实验3
+          </div>
+        </div>
+      </div>
+      <div class="aui-slide-page-wrap"><!--分页容器--></div>
     </div>
-    <div class="c-discovery__icons aui-flex-col">
-      <div class="aui-flex-item-3 txt--c">
-        <a>
+    <!-- sub menu -->
+    <div class="p-discovery__menu aui-flex-col">
+      <div class="aui-flex-item-3 aui-text-center p-discovery__menu--item">
+        <a class="active">
           <div class="icon-border"><i class="tech-icon_flag icon"></i></div>
           <span>营地</span>
         </a>
       </div>
 
-      <div class="aui-flex-item-3 txt--c">
+      <div class="aui-flex-item-3 aui-text-center p-discovery__menu--item">
         <a>
           <div class="icon-border"><i class="tech-icon_guowai icon"></i></div>
           <span>国外</span>
         </a>
       </div>
 
-      <div class="aui-flex-item-3 txt--c">
+      <div class="aui-flex-item-3 aui-text-center p-discovery__menu--item">
         <a>
           <div class="icon-border"><i class="tech-icon_fujin icon"></i></div>
           <span>附近</span>
         </a>
       </div>
 
-      <div class="aui-flex-item-3 txt--c">
+      <div class="aui-flex-item-3 aui-text-center">
         <a>
           <div class="icon-border"><i class="tech-icon_hot icon"></i></div>
           <span>热门</span>
@@ -56,6 +77,146 @@
       </div>
 
     </div>
+    <!-- filter -->
+    <div class="aui-hr"></div>
+    <div class="aui-row p-discovery__filters aui-text-center">
+      <div class="aui-col-xs-4">
+        <span class="">推荐排序<i class="tech-icon_jiantou_down"></i></span>
+      </div>
+      <div class="aui-col-xs-4">
+        <span class="">距离排序<i class="tech-icon_jiantou_down"></i></span>
+      </div>
+      <div class="aui-col-xs-4">
+        <span class="">人气排序<i class="tech-icon_jiantou_down"></i></span>
+      </div>
+    </div>
+    <div class="aui-hr"></div>
+    <!-- favorite -->
+    <div class="p-discovery__favorite">
+      <h2>你感兴趣的</h2>
+      <div id="favorite-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../image/discovery-img3.jpg">
+            <div class="p-discovery__favorite--slider-txt">
+              <h3 class="c-content__title aui-ellipsis-2">科学实验化学研究工作氯苯1</h3>
+              <div class="c-content__subTitle">北大青鸟动物协会</div>
+              <div class="aui-row">
+                <li class="aui-col-xs-6 c-content__detail-time">
+                  <span>2018.09.22</span>
+                </li>
+                <li class="aui-col-xs-2"></li>
+                <li class="aui-col-xs-4 c-content__detail-location">
+                  <span><i class="tech-icon_map2"></i>0.4KM</span>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/discovery-img3.jpg">
+            <div class="p-discovery__favorite--slider-txt">
+              <h3 class="c-content__title aui-ellipsis-2">科学实验化学研究工作氯苯1</h3>
+              <div class="c-content__subTitle">北大青鸟动物协会</div>
+              <div class="aui-row">
+                <li class="aui-col-xs-6 c-content__detail-time">
+                  <span>2018.09.22</span>
+                </li>
+                <li class="aui-col-xs-2"></li>
+                <li class="aui-col-xs-4 c-content__detail-location">
+                  <span><i class="tech-icon_map2"></i>0.4KM</span>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="../image/discovery-img3.jpg">
+            <div class="p-discovery__favorite--slider-txt">
+              <h3 class="c-content__title aui-ellipsis-2">科学实验化学研究工作氯苯1</h3>
+              <div class="c-content__subTitle">北大青鸟动物协会</div>
+              <div class="aui-row">
+                <li class="aui-col-xs-6 c-content__detail-time">
+                  <span>2018.09.22</span>
+                </li>
+                <li class="aui-col-xs-2"></li>
+                <li class="aui-col-xs-4 c-content__detail-location">
+                  <span><i class="tech-icon_map2"></i>0.4KM</span>
+                </li>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
+    <!-- main content -->
+    <div class="p-discovery__projects">
+      <article class="c-content" onclick="openWin('project-detail-tab_win')">
+        <h2 class="c-content__title">北京植物园生长观察报告</h2>
+        <h3 class="c-content__subTitle">北京市第六十六中学</h3>
+        <div class="c-content__pic">
+            <div class="c-content__pic--item" style="background-image:url(../image/project/pic_1.jpg);"></div>
+            <div class="c-content__pic--item" style="background-image:url(../image/project/pic_2.jpg);"></div>
+            <div class=" c-content__pic--item" style="background-image:url(../image/project/pic_3.jpg);"></div>
+        </div>
+        <div class="aui-row">
+            <div class="aui-col-xs-6 c-content__detail-time">
+              2018-09-18 13:22
+            </div>
+            <div class="aui-col-xs-6 c-content__detail-location">
+              <span><i class="tech-icon_map2"></i>0.4KM</span>
+            </div>
+        </div>
+      </article>
+
+      <article class="c-content" onclick="openWin('project-detail-tab_win')">
+        <h2 class="c-content__title">北京植物园生长观察报告</h2>
+        <h3 class="c-content__subTitle">北京市第六十六中学</h3>
+        <div class="c-content__pic">
+            <div class="c-content__pic--item" style="background-image:url(../image/project/pic_1.jpg);"></div>
+            <div class="c-content__pic--item" style="background-image:url(../image/project/pic_2.jpg);"></div>
+            <div class=" c-content__pic--item" style="background-image:url(../image/project/pic_3.jpg);"></div>
+        </div>
+        <div class="aui-row">
+            <div class="aui-col-xs-6 c-content__detail-time">
+              2018-09-18 13:22
+            </div>
+            <div class="aui-col-xs-6 c-content__detail-location">
+              <span><i class="tech-icon_map2"></i>0.4KM</span>
+            </div>
+        </div>
+      </article>
+    </div>
 </body>
 </html>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../wgt/aui/script/api.js"></script>
+<script type="text/javascript" src="../wgt/aui/script/aui-slide.js"></script>
+<script type="text/javascript" src="../script/swiper.min.js"></script>
+<script>
+// initHeroSlider();
+// favoriteSlider();
+	apiready = function(){
+    initHeroSlider();
+    favoriteSlider();
+	};
+  function initHeroSlider() {
+    var heroSlider = new auiSlide({
+            container : document.getElementById("discovery-slider"),
+            "height":240,
+            "speed":500,
+            "autoPlay": 5000, //自动播放
+            "loop":true,
+            "pageShow":true,
+            "pageStyle":"dot",
+            "dotPosition":"right"
+    })
+  };
+  function favoriteSlider(){
+    var swiper = new Swiper('#favorite-slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 20
+    });
+  }
+
+
+</script>

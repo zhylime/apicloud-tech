@@ -14,7 +14,7 @@
 .c-content__subTitle {
 	font-size: .6rem;
 	color: #8b8b8b;
-	line-height: 1.2rem: 
+	line-height: 1.2rem:
 }
 
 .c-content__pic {
@@ -52,7 +52,11 @@
 	color: #3ca2fc;
 	text-align: right;
 }
-
+.c-content__detail-location{
+  font-size: .6rem;
+  color:#aeaeae;
+  text-align: right;
+}
 .c-content__recommend--label{
 	color: #919191;
 	border: 1px solid #e6e6e6;
