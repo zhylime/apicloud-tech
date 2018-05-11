@@ -69,3 +69,25 @@ function openWin(name){
         vScrollBarEnabled:false
     });
 }
+
+// open frame
+function openFrame(name){
+    api.openFrame({
+        name: ''+name+'',
+        url: ''+name+'.html',
+        scrollEnabled: true,
+        rect: {
+            x: 0,
+            y: 0,
+            w: 'auto',
+            h: 'auto'
+        },
+        index: 1,
+    });
+};
+
+// remove removeRecommend()
+function removeRecommend(tag){
+    var recommendContent = $api.closest(tag, '.js-recommend');
+    $api.remove(recommendContent);
+} 
