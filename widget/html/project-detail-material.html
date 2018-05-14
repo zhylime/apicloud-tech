@@ -71,13 +71,31 @@
         </div>
     </article>
 
-</table>
+    <div class="project-edit" id="project-edit" onclick="openFrame('overlay-create-material')">
+       <i class="tech-icon_jia tech-icon"></i>
+    </div>
 </body>
 <script type="text/javascript" src="../script/api.js" ></script>
 <script type="text/javascript">
     apiready = function(){
         api.parseTapmode();
     }
+
+    // open frame
+    function openFrame(name){
+        api.openFrame({
+            name: ''+name+'',
+            url: ''+name+'.html',
+            scrollEnabled: true,
+            rect: {
+                x: 0,
+                y: 0,
+                w: 'auto',
+                h: 'auto'
+            },
+            index: 1,
+        });
+    };
     
 </script>
 </html>

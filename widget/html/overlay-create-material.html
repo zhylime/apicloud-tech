@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_overlayCreate.css"/>
+    <style type="text/css">
+      html, body {
+        background-color: rgba(255,255,255,0.7);
+      }
+    </style>
+</head>
+<body>
+    <div class="c-content__create--text"></div>
+    <footer class="c-content__create--wrap aui-bar-tab aui-grid aui-margin-b-15" id="footer">
+        <div class="aui-row c-content__create--btnGroup">
+          <div class="aui-col-xs-3">
+            <i class="tech-icon_jia_wenzi"></i>
+            <div class="aui-grid-label">文字</div>
+          </div>
+          <div class="aui-col-xs-3">
+            <i class="tech-icon_paishe"></i>
+            <div class="aui-grid-label">拍摄</div>
+          </div>
+          <div class="aui-col-xs-3">
+            <i class="tech-icon_img"></i>
+            <div class="aui-grid-label">像素</div>
+          </div>
+          <div class="aui-col-xs-3">
+            <i class="tech-icon_sucai"></i>
+            <div class="aui-grid-label">我的素材</div>
+          </div>
+        </div>
+        <div class="aui-row c-content__create--close">
+          <div class="aui-col-xs-4">
+          </div>
+          <div class="aui-col-xs-4" onclick="closeCreateOverlay()">
+            <i class="tech-icon_jia_close"></i>
+          </div>
+          <div class="aui-col-xs-4">
+          </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+  // close overlay
+function closeCreateOverlay(){
+    api.closeFrame({
+        name: 'overlay-create-material'
+    });
+};
+</script>
+</html>
