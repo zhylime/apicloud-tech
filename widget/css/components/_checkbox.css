@@ -1,0 +1,26 @@
+.c-checkbox{
+  width: 15px;
+  height: 15px;
+  display: block;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: auto;
+  position: relative;
+  margin-top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.c-checkbox i{
+  display: none;
+  font-size: 0.4rem;
+  color: #72d881;
+  line-height: 13px;
+  font-size: 8px;
+  text-align: center;
+}
+.c-checkbox.checked i{
+  display: block
+}
+.c-checkbox input[type="checkbox"]{
+  opacity: 0;
+}

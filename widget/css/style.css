@@ -10,6 +10,9 @@ html,body {  font-size:14px; height:100%; }
 .border-t:before,
 .border-b:after{     content: '';     position: absolute;     left: 0;  top:0;     background: #ddd;   right:0;    height: 1px;     -webkit-transform: scaleY(0.5);             transform: scaleY(0.5);     -webkit-transform-origin: 0 0;             transform-origin: 0 0; }
 .border-b:after{ top:auto; bottom:0;  }
+.border-b-grey{
+  border-bottom: 1px solid #e5e5e5;
+}
 
 input[type="text"]{
   padding: 0 10px;
