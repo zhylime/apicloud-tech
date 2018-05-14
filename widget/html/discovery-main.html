@@ -1,3 +1,4 @@
+<!-- 发现 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
     <link rel="stylesheet" type="text/css" href="../css/pages/_discovery.css"/>
 </head>
-<body class="aui-content p-discovery">
+<body class="aui-content frame_container p-discovery">
   <div class="aui-searchbar c-search" id="search">
     <div class="aui-searchbar-input aui-border-radius c-search__redirect" onclick="openWin('search-home')">
         <i class="aui-iconfont aui-icon-search"></i>
@@ -192,10 +193,12 @@
 <script type="text/javascript" src="../wgt/aui/script/api.js"></script>
 <script type="text/javascript" src="../wgt/aui/script/aui-slide.js"></script>
 <script type="text/javascript" src="../script/swiper.min.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
 <script>
 // initHeroSlider();
 // favoriteSlider();
 	apiready = function(){
+    fnReady();
     initHeroSlider();
     favoriteSlider();
 	};
