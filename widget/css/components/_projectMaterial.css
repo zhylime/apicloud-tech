@@ -47,9 +47,13 @@ body {
 }
 
 .project-material__video {
-	max-height: 6rem;
 	overflow: hidden;
     padding: auto .5rem;
+    max-height: 10rem;
+}
+
+.project-material__video img {
+	width: 100%;
 }
 
  .project-material__footer {
@@ -69,6 +73,17 @@ body {
 .project-edit .tech-icon {
     font-size: 2rem;
     color: #42a3f8;
+}
+
+.tech-icon_video2 {
+	position: absolute;
+	left: 38%;
+	top: 35%;
+	left: calc(50% - 1rem);
+	top: calc(50% - 1rem);
+	font-size: 2rem;
+	color: rgba(255,255,255,0.8);
+	display: block;
 }
 
 

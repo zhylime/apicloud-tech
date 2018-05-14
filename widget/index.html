@@ -14,6 +14,15 @@
         .flex-con{
           overflow: auto
         }
+        header .border-b .aui-badge {
+            left:50%;
+            margin-left: .5rem;
+            top: 0;
+            min-width: 1rem;
+            height: 1rem;
+            border-radius: 1rem;
+            line-height: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +30,9 @@
     <header>
         <ul>
             <li class="border-b active" >项目</li>
-            <li class="border-b" >消息</li>
+            <li class="border-b" >                
+                <div class="aui-badge">34</div>
+                <div class="aui-grid-label">消息</div></li>
             <li class="border-b" >添加</li>
             <li class="border-b" >发现</li>
             <li class="border-b" >我的</li>
@@ -37,8 +48,8 @@
                 <span class="tech-icon_xiangmu"></span>
                 <div class="aui-grid-label">项目</div>
             </li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="frame1">
-                <div class="aui-badge">88</div>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" data-url="msg-main">
+                <div class="aui-badge">34</div>
                 <span class="tech-icon_message"></span>
                 <div class="aui-grid-label">消息</div>
             </li>
