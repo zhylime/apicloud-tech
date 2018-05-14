@@ -89,5 +89,55 @@ function openFrame(name){
 // remove removeRecommend()
 function removeRecommend(tag){
     var recommendContent = $api.closest(tag, '.js-recommend');
-    $api.remove(recommendContent);
+    api.actionSheet({
+        cancelTitle: '取消',
+        buttons: ['不感兴趣'],
+        style: {
+            fontNormalColor: '#3a3a3a'
+        }
+    }, function(ret, err) {
+        var index = ret.buttonIndex;
+        if (index === 1) {
+            $api.remove(recommendContent);
+        }
+    });
 } 
+
+// close frame 
+function closeFrame(name){
+    api.closeFrame({
+        name: ''+name+'',
+    });
+};
+
+function openMenuFrame(name){
+        var headerPos = $api.dom('#aui-header').offsetHeight;
+        api.openFrame({
+            name: ''+name+'',
+            url: ''+name+'.html',
+            scrollEnabled: true,
+            rect: {
+                x: 0,
+                y: headerPos,
+                w: 'auto',
+                h: 'auto'
+            },
+            index: 0,
+            animation: {
+                type: 'ripple',
+                subType: 'from_top',
+
+            }
+        });
+    }
+
+
+function toggleFrame(name){
+    if(!$api.getStorage(name)){ 
+       openMenuFrame(name); 
+        $api.setStorage(name, true);
+    }else { 
+        closeFrame(name);
+        $api.rmStorage(name);
+    }
+}

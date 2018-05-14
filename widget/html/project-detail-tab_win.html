@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css" />
     <link rel="stylesheet" type="text/css" href="../css/api.css" />
-    <link rel="stylesheet" type="text/css" href="../css/components/_project-tab.css" />
+    <link rel="stylesheet" type="text/css" href="../css/components/_project.css" />
 </head>
 <body>
     <header class="aui-bar aui-bar-nav project-tab__header" id="aui-header">
@@ -14,21 +14,22 @@
             <span class="tech-icon_jiantou"></span>
         </a>
         <div class="aui-title">北京植物园生长观察...</div>
-        <a class="aui-btn aui-pull-right" tapmode onclick="">
+        <a class="aui-btn aui-pull-right" tapmode onclick="toggleFrame('project-detail-overlay-menu')">
             <span class="tech-icon_diandian"></span>
         </a>
         <a class="aui-btn aui-pull-right" tapmode onclick="">
             <span class=" tech-icon_lock"></span>
         </a>
     </header>
-     <div class="aui-tab project-tab__option" id="tab">
+     <div class="aui-tab project-tab__option" id="project-tab">
         <div class="aui-tab-item aui-active" data-url="project-detail-report">报告</div>
-        <div class="aui-tab-item" data-url="project-detail-report">素材</div>
+        <div class="aui-tab-item" data-url="project-detail-material">素材</div>
         <div class="aui-tab-item" data-url="project-detail-report">消息</div>
-        <div class="aui-tab-item" data-url="project-detail-report">成员</div>
+        <div class="aui-tab-item" data-url="project-detail-member">成员</div>
     </div>
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
 <script type="text/javascript" src="../wgt/aui/script/aui-tab.js" ></script>
 <script type="text/javascript">
     apiready = function(){
@@ -37,14 +38,14 @@
         $api.fixStatusBar(header);
         var headerPos = $api.offset(header);
         var body_h = $api.offset($api.dom('body')).h;
-        funIniGroup();
-
+        fnInitTabGroup();
 
     };
     var tab = new auiTab({
-        element:document.getElementById("tab"),
+        element:document.getElementById("project-tab"),
     },function(ret){
-        console.log(ret)
+        
+        randomSwitchBtn(ret.index - 1);
     });
 
     function closeWin(){
@@ -52,8 +53,8 @@
         });
     }
 
-    function funIniGroup(){
-        var eTabLis = $api.domAll('#tab .aui-tab-item'),
+    function fnInitTabGroup(){
+        var eTabLis = $api.domAll('#project-tab .aui-tab-item'),
             frames = [];
         for (var i = 0,len = eTabLis.length; i < len; i++) {
           var _name = $api.attr(eTabLis[i], 'data-url'),
@@ -61,7 +62,7 @@
                 frames.push( {
                     name: _name,
                     url:  _url,
-                    bgColor : 'rgba(0,0,0,.2)',
+                    bgColor : '#fff',
                     bounces:true
                 } )
         }
@@ -70,7 +71,7 @@
             scrollEnabled: false,
             rect: {
                 x: 0,
-                y: $api.dom('#tab').offsetHeight + $api.dom('#aui-header').offsetHeight,
+                y: $api.dom('#project-tab').offsetHeight + $api.dom('#aui-header').offsetHeight,
                 w: api.winWidth,
                 h: 'auto'
             },
@@ -79,11 +80,14 @@
         }, function (ret, err) {
         });
     }
-    function randomSwitchBtn( tag ) {
+
+    function randomSwitchBtn( index ) {
         api.setFrameGroupIndex({
             name: 'group-tab',
             index: index
         });
     }
+
+
 </script>
 </html>

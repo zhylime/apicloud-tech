@@ -1,0 +1,94 @@
+html,
+body {
+	background-color: #fff;
+}
+.project-tab__header {
+	background-color: #fff;
+	color: #3a3a3a;
+	padding: 0 .5rem;
+	border-bottom: 1px solid #eee;
+}
+.project-tab__header a {
+	color: #3a3a3a;
+}
+.project-tab__header .tech-icon_diandian {
+	font-weight: bold;
+}
+
+.project-tab__option {
+	border-bottom: 1px solid #eee;
+}
+.project-tab__option .aui-tab-item{
+	margin: auto 7%;
+	color: #acb4bb;
+	font-weight: bold;
+}
+
+.project-tab__option .aui-tab-item.aui-active {
+	color: #3a3a3a;
+	border-bottom: 2px solid #3ca2fc;
+
+}
+
+.project-tab__header .tech-icon_lock {
+	font-weight: bold;
+}
+
+.project-report {
+	background: #fff;
+	padding: .5rem 1rem; 
+}
+
+.project-report {
+	font-weight: bold;
+	font-size: .8rem;
+	line-height: 1.5rem;
+}
+
+.project-report table{
+	*border-collapse: collapse; 
+	border-spacing: 0; width: 100%;
+	border: solid #ccc 1px; 
+	-webkit-box-shadow: 0 1px 1px #ccc; 
+	-moz-box-shadow: 0 1px 1px #ccc; 
+	box-shadow: 0 1px 1px #ccc;
+	margin: .5rem auto 1rem; 
+}
+
+.project-report table tr {
+	-o-transition: all 0.1s ease-in-out; 
+	-webkit-transition: all 0.1s ease-in-out; 
+	-moz-transition: all 0.1s ease-in-out; 
+	-ms-transition: all 0.1s ease-in-out; 
+	transition: all 0.1s ease-in-out;
+}
+.project-report table td, .project-report table  th {
+	border-left: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	padding: 10px; text-align: left;
+	vertical-align: top;
+	width: 28%;
+	font-size: .7rem;
+}
+.project-report table .project-report__table-title {
+	font-weight: bold;
+	width: 22%;
+}
+
+.project-report__item {
+	margin-top: 1rem;
+}
+
+.project-report__item--title {
+	font-weight: bold;
+	font-size: .7rem;
+	line-height: 1.4rem;
+}
+
+.project-report__item p{
+	color: #cbcbcb;
+	font-size: .6rem;
+	font-style: italic;
+	line-height: .8rem;
+}
+

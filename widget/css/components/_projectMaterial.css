@@ -1,0 +1,61 @@
+html,
+body {
+	background-color: #fff;
+}
+.btn {
+	width: .9rem;
+	height: 1rem;
+	display: inline-block;
+}
+
+.icon-blue {
+	color: #42a3f8;
+}
+
+.icon-grey {
+	color: #949494;
+}
+
+.icon-small {
+	font-size: .7rem;
+	vertical-align: middle;
+}
+
+.project-material {
+	padding: .5rem 1rem; 
+}
+
+.project-material .aui-row {
+	padding-bottom: .5rem;
+}
+
+.project-material .aui-row:nth-child(2) {
+	padding-bottom: .5rem;
+	border-bottom: 1px solid rgba(139,139,139,0.2); 
+}
+
+.project-material__text {
+	font-size: 0.7rem;
+    color: #333333;
+    padding: auto .5rem;
+}
+
+.project-material__image {
+	max-height: 4rem;
+	overflow: hidden;
+    padding: auto .5rem;
+}
+
+.project-material__video {
+	max-height: 6rem;
+	overflow: hidden;
+    padding: auto .5rem;
+}
+
+ .project-material__footer {
+	font-size: .6rem;
+	color: #8b8b8b;
+	line-height: 1rem;
+ }
+
+
