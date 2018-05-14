@@ -96,6 +96,11 @@ td,th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.tech-icon-editor:before {
+  content: "\e946";
+}
+
 .tech-icon_diandian:before {
   content: "\e945";
 }

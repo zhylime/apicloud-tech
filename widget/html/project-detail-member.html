@@ -12,6 +12,7 @@
             padding: .5rem 1rem; 
         }
 
+
         .project-member .aui-media-list .aui-list-item-inner, .project-member .aui-card-list-header, .aui-card-list-footer {
             padding: 0;
             justify-content: flex-start;
@@ -64,7 +65,7 @@
         }
 
         .project-member .aui-list .aui-list-item:active{
-            background: none;
+            background-color: transparent;
         }
 
         .project-member__item {
@@ -73,7 +74,18 @@
         .project-member .tech-icon_jiaruxiaozu , .project-member .tech-icon_tuichuxiaozu{
             font-size: 2.4rem;
         }
-        
+        .project-edit {
+            width: 2rem;
+            height: 2rem;
+            position: fixed;
+            right: 1rem;
+            top: 50%;
+            z-index: 1
+        }
+        .project-edit .tech-icon {
+            font-size: 2rem;
+            color: #42a3f8;
+        }        
 
     </style>
 </head>
@@ -287,7 +299,11 @@
                 </ul>
             </div>
         </div>
-    </article>
+        <div class="aui-btn aui-btn-info aui-btn-block">删除并退出该项目</div>
+    </section>
+    <div class="project-edit" id="project-edit">
+       <i class="tech-icon-editor tech-icon"></i>
+    </div>
 
 </table>
 </body>

@@ -91,4 +91,16 @@ body {
 	font-style: italic;
 	line-height: .8rem;
 }
+.project-edit {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    z-index: 1
+}
+.project-edit .tech-icon {
+    font-size: 2rem;
+    color: #42a3f8;
+}
 
