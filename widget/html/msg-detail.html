@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>项目详细页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/components/_msg.css" />
+    <style type="text/css">
+
+        .msg-detail__footer {
+            padding: 0rem 1rem; 
+            border-top: 1px solid rgba(139,139,139,0.2); 
+            background-color: #fff;
+        }
+        .msg-detail__footer input {
+            font-size: .7rem
+        }
+        .msg-detail__btn {
+            color: #3ca2fc;
+            font-size: .7rem;
+        }
+        .msg-detail__header {
+            background-color: #fff;
+            color: #333333;
+            padding: 0 .5rem;
+            border-bottom: 1px solid #eee;
+        }
+        .msg-detail__header a {
+            color: #333333;
+        }
+        .msg-detail__content {
+            padding: 1rem;
+            background: #fff;
+            border-bottom: 1px solid rgba(139,139,139,0.2); 
+        }
+        .msg-detail__content, .msg-detail__content p {
+            font-size: .7rem;
+            color: #333333;
+            line-height: 1.2rem;
+        }
+        .msg-comments {
+            padding: .5rem 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .msg-comments__header, .msg-comments__header span {
+            font-size: .8rem;
+            color: #333333;
+            display: inline-block;
+        }
+        .msg-comments__header span
+        {
+            border-bottom: 3px solid #3ca2fc; 
+            padding-bottom: .5rem;
+        }
+        .msg-comments__content:nth-child(1) {
+            border-top: 1px solid rgba(139,139,139,0.2); 
+        }
+        .msg-comments__content {
+            border-bottom: 1px solid rgba(139,139,139,0.2); 
+            position: relative;
+            background: #ffffff;
+            min-height: 2.2rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+        }
+        .msg-comments__content--header {
+            width: 3rem;
+            height: 3.25rem;
+            position: relative;
+            padding: 0.5rem 0;
+            padding-right: 0.75rem;
+            display: inherit;
+            -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-box-align: center;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+        }
+        .msg-comments__content--header img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .msg-comments__content-detail {
+            display: block;
+            position: relative;
+            min-height: 2.2rem;
+            padding: .5rem .75rem 0 0;
+            margin-bottom: -0.3rem;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-flex: 1;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .msg-comments__content--text {
+            font-size: 0.7rem;
+            position: relative;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .msg-comments__content-title {
+            font-size: 0.6rem;
+            position: relative;
+            max-width: 100%;
+            color: #6f6f6f;
+        }
+        .msg-comments__content--text small{
+            color: #aeaeae;
+            font-size: .5rem;
+        }
+        .msg-comments__content--footer {
+            position: relative;
+            top:  -1rem;
+            right: 0;
+        }
+        .msg-comments__content--footer .tech-icon, .msg-comments__content--footer span{
+            color: #3ca2fc;
+            font-size: 0.6rem;
+            vertical-align: middle;
+        }
+        .msg-comments__content--info {
+            padding-top: .25rem;
+            margin-right: 3rem;
+        }
+        .msg-comments__content--info, .msg-comments__content--info p {
+            color: #333333;
+            font-size: .7rem;
+            line-height: 1.2rem;
+        }
+        .msg-comments__content--replay {
+            background-color: #f1f1f1;
+            padding: .5rem;
+            font-size: .6rem;
+            margin-top: .4rem;
+            margin-bottom: 1.5rem;
+            margin-right: -3rem;
+        }
+        .msg-comments__content--replay  span{
+            display: inline;
+        }
+        .msg-comments__content--replay-user {
+            color: #3ca2fc;
+        }
+        .msg-comments_check-detail {
+            color: #939393;
+            margin-top: .7rem;
+            font-size: .6rem;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav msg-detail__header" id="aui-header">
+        <a class="aui-btn aui-pull-left" tapmode onclick="closeFrame('msg-detail')">
+            <span class="tech-icon_jiantou"></span>
+        </a>
+        <div class="aui-title">北京植物园生长观察报告...</div>
+    </header>
+
+    <section class="msg-detail__content">
+        <article>
+            <p>纸巾最主要是用来清洁和干燥，常见于吸水的场景比起抽纸和卷纸，压花更多见于厨房纸，因为吸水的需求更强烈。</p>
+            <p>纸巾最主要是用来清洁和干燥，常见于吸水的场景比起抽纸和卷纸，压花更多见于厨房纸，因为吸水的需求更强烈。</p>
+        </article>
+    </section> 
+
+    <section class="msg-comments aui-margin-t-5">
+        <div class="msg-comments__header">
+            <span>全部回复</span>
+        </div>
+
+        <article class="msg-comments__content aui-margin-t-10 aui-margin-b-10">
+            <div class="msg-comments__content--header">
+                <img src="../image/msg/msg_1.jpg" class="aui-img-round">
+            </div>
+            <div class="msg-comments__content-detail">
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content-title">科研会会长</div>
+                    <small>第1楼 上午 10:22</small>
+                   
+                </div>
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content--info">
+                        <p>我会了呢</p>
+                    </div>
+                   
+                </div>
+                <div class="msg-comments__content--footer aui-pull-right ">
+                    <i class="tech-icon_message tech-icon"></i> <span>回复</span>
+                </div>
+            </div>
+        </article>
+        <article class="msg-comments__content aui-margin-t-10 aui-margin-b-10">
+            <div class="msg-comments__content--header">
+                <img src="../image/msg/msg_2.jpg" class="aui-img-round">
+            </div>
+            <div class="msg-comments__content-detail">
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content-title">果树学博士生</div>
+                    <small>第2楼 下午 16:30</small>
+                   
+                </div>
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content--info">
+                        <p>你太厉害了吧！</p>
+                    </div>
+                   
+                </div>
+                <div class="msg-comments__content--footer aui-pull-right ">
+                    <i class="tech-icon_message tech-icon"></i> <span>回复</span>
+                </div>
+            </div>
+        </article>
+        <article class="msg-comments__content aui-margin-t-10 aui-margin-b-10">
+            <div class="msg-comments__content--header">
+                <img src="../image/msg/msg_3.jpg" class="aui-img-round">
+            </div>
+            <div class="msg-comments__content-detail">
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content-title">点点童话</div>
+                    <small>第3楼 下午 16:30</small>
+                   
+                </div>
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content--info">
+                        <div class="">在线等回复，因为我没看懂到底说的什么虾米东西？...</div>
+                        <div class="msg-comments__content--replay">
+                            <article>
+                                <span class="msg-comments__content--replay-user">女博士：</span>
+                                <span class="msg-comments__content--replay-content">为什么人类混血的好看，其他动物都是纯血的好看。</span>
+                            </article>
+                            <article>
+                                <span class="msg-comments__content--replay-user">琅琊榜第36回：</span>
+                                <span class="msg-comments__content--replay-content">这个帖子里看到的，事情的经过可能是，某人先把很多本书叠在一起试射，子弹有穿透第一本，然后他只用与那第一。</span>
+                            </article>
+                            <div class="msg-comments_check-detail">查看全部19条评论</div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="msg-comments__content--footer aui-pull-right ">
+                    <i class="tech-icon_message tech-icon"></i> <span>回复</span>
+                </div>
+            </div>
+        </article>
+        <article class="msg-comments__content aui-margin-t-10 aui-margin-b-10">
+            <div class="msg-comments__content--header">
+                <img src="../image/msg/msg_4.jpg" class="aui-img-round">
+            </div>
+            <div class="msg-comments__content-detail">
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content-title">X特遣队</div>
+                    <small>第4楼 上午 10:22</small>
+                   
+                </div>
+                <div class="msg-comments__content--text">
+                    
+                    <div class="msg-comments__content--info">
+                        <p>上帝根本就不打算拯救二百五</p>
+                    </div>
+                   
+                </div>
+                <div class="msg-comments__content--footer aui-pull-right ">
+                    <i class="tech-icon_message tech-icon"></i> <span>回复</span>
+                </div>
+            </div>
+        </article>
+        
+    </section> 
+
+    <footer class="aui-bar aui-bar-tab aui-margin-t-15 msg-detail__footer">
+        <div class="aui-bar-tab-item aui-padded-l-15 aui-padded-r-15" tapmode="" style="width: auto;">
+            <div class="search-input aui-font-size-14">
+                <input type="text" placeholder="说说你的看法" ／>
+            </div>
+        </div>
+        <div class="aui-bar-tab-item msg-detail__btn" tapmode="" style="width: 2.2rem;">
+            发布
+        </div>
+    </footer>
+    
+</body>
+<script type="text/javascript" src="../script/api.js" ></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+
+    }
+    // close frame 
+    function closeFrame(name){
+        api.closeFrame({
+            name: ''+name+'',
+        });
+    };
+    
+</script>
+</html>
