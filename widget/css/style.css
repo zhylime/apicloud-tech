@@ -27,11 +27,27 @@ input[type="text"]{
 .txt-blue{
   color: #3ca2fc !important;
 }
+.txt-bold{
+  font-weight: bold;
+}
 .float-none{
   float: none !important;
 }
+.flex-item-center{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center
+}
+.flex-box-align-center{
+  align-items: center;
+  -webkit-align-items: center;
+}
 #wrap{ height: 100%; }
-
+.aui-list,
+.aui-list .aui-list-item{
+  background-image: none !important;
+}
 /*frame styles*/
 .frame_container{
   width: 94%;

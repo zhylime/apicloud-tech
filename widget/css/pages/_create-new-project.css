@@ -1,0 +1,35 @@
+.p-create-new-project .aui-list-item-label .limit{
+  position: absolute;
+  right: 0;
+}
+.p-create-new-project .aui-list-item-input,
+.p-create-new-project input[type="number"]{
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
+.p-create-new-project input[type="number"]{
+  padding-left: 0.5rem;
+}
+.aui-list .aui-list-item-inner.p-create-new-project__desc{
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.p-create-new-project__desc .aui-list-item-label{
+  display: inline-block;
+  line-height: 1rem;
+}
+.p-create-new-project__label{
+  padding-left: 0.75rem;
+  line-height: 2.2rem;
+}
+.p-create-new-project .aui-btn{
+  background: #f9f9f9;
+  border: 1px solid #d4d4d4;
+  width: 90%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.p-create-new-project .aui-btn.blue-border{
+  border-color: #3ca2fc;
+}

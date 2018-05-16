@@ -13,7 +13,7 @@
     <div class="c-content__create--text">记录，开启你的专业化实验轨迹</div>
     <footer class="c-content__create--wrap aui-bar-tab aui-grid aui-margin-b-15" id="footer">
         <div class="aui-row c-content__create--btnGroup">
-          <div class="aui-col-xs-3">
+          <div class="aui-col-xs-3" onclick="openFrame('create-new-project'); closeFrame('overlay-create')">
             <i class="tech-icon_xiangmu2"></i>
             <div class="aui-grid-label">新建项目</div>
           </div>
@@ -21,11 +21,11 @@
             <i class="tech-icon_tianjiaziliao"></i>
             <div class="aui-grid-label">搜索素材</div>
           </div>
-          <div class="aui-col-xs-3" onclick="openScan()">
+          <div class="aui-col-xs-3" onclick="openScan(); closeFrame('overlay-create')">
             <i class="tech-icon_saomiao"></i>
             <div class="aui-grid-label">扫码</div>
           </div>
-          <div class="aui-col-xs-3">
+          <div class="aui-col-xs-3" onclick="openFrame('search-home'); closeFrame('overlay-create')">
             <i class="tech-icon_search"></i>
             <div class="aui-grid-label">搜索项目</div>
           </div>
