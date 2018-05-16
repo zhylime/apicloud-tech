@@ -19,7 +19,13 @@ input[type="text"]{
 }
 
 .txt-grey{
-  color: #ccc;
+  color: #8b8b8b !important;
+}
+.txt-black{
+  color: #000 !important;
+}
+.txt-blue{
+  color: #3ca2fc !important;
 }
 .float-none{
   float: none !important;

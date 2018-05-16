@@ -463,7 +463,7 @@ img.aui-img-round {
 .aui-row-padded [class*=aui-col-xs-] {
 	padding: 0.125rem;
 }
-.aui-col-xs-1,.aui-col-xs-2,.aui-col-xs-3,.aui-col-xs-4,.aui-col-xs-5,.aui-col-xs-6,.aui-col-xs-7,.aui-col-xs-8,.aui-col-xs-9,.aui-col-xs-10,.aui-col-xs-11,.aui-col-5 {
+.aui-col-xs-1,.aui-col-xs-2,.aui-col-xs-3,.aui-col-xs-4,.aui-col-xs-5,.aui-col-xs-6,.aui-col-xs-7,.aui-col-xs-8,.aui-col-xs-9,.aui-col-xs-10,.aui-col-xs-11,.aui-col-5,.aui-col-80p {
 	position: relative;
 	float: left;
 }
@@ -506,6 +506,9 @@ img.aui-img-round {
 }
 .aui-col-5 {
 	width: 20%;
+}
+.aui-col-80p{
+	width: 80%;
 }
 /*标签*/
 .aui-label {
