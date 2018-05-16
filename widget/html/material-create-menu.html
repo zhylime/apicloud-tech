@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>素材</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css" />
+    <style type="text/css">
+        html, body {
+            background-color: transparent!important;
+        }
+        .aui-content {
+            position: fixed;
+            right: 1rem;
+            min-width: 3rem;
+            border: 1px solid #ebeaea;
+            box-shadow: 0px 0px 20px #ddd;
+            
+        }
+        .aui-list.aui-list-in .aui-list-item {
+            background-position: 0 bottom;
+            background-image: linear-gradient(0,#dddddd,#dddddd 50%,transparent 50%);
+            border-bottom: 1px solid rgba(221,221,221,.5);
+        }
+        .aui-content .aui-list-item-title{
+            font-size: 14px;
+            padding-right: 2rem;
+        }
+        .aui-content li.aui-active .aui-list-item-inner:after
+        {
+          content: "\e93e";
+          font-size: 12px;
+            color: #3ca2fc;
+        }
+
+        .aui-list .aui-list-item, .aui-list .aui-list-item-inner {
+            min-height: 1.8rem;
+            line-height: 1.6rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="aui-content aui-margin-b-15">
+        <ul class="aui-list aui-list-in" id="tab_menu">
+            <li class="aui-tab-item aui-list-item aui-active" tapmode="" data-item-order="0">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">新建文件夹</div>
+                </div>
+            </li>
+            <li class="aui-tab-item aui-list-item" tapmode="" data-item-order="1">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">上传文件</div>
+                </div>
+            </li>
+            <li class="aui-tab-item aui-list-item" tapmode="" data-item-order="2">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">按日期排序</div>
+                </div>
+            </li>
+            <li class="aui-tab-item aui-list-item" tapmode="" data-item-order="3">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">按文件排序</div>
+                </div>
+            </li>
+            <li class="aui-tab-item aui-list-item" tapmode="" data-item-order="4">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">设置共享</div>
+                </div>
+            </li>
+            <li class="aui-tab-item aui-list-item" tapmode="" data-item-order="5">
+                <div class="aui-list-item-inner tech-icon">
+                    <div class="aui-list-item-title">显示摘要</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+            
+</body>
+<script type="text/javascript" src="../script/api.js" ></script>
+<script type="text/javascript" src="../script/common.js" ></script>
+<script type="text/javascript" src="../wgt/aui/script/aui-tab.js" ></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+    }
+
+    var menuMaterialIndex;
+    var tab = new auiTab({
+        element:document.getElementById("tab_menu"),
+        index: $api.getStorage(menuMaterialIndex) !== undefined ? $api.getStorage(menuMaterialIndex) : 5,
+        repeatClick:false
+    },function(ret){
+        $api.setStorage(menuMaterialIndex, ret.index);
+        console.log(ret)
+    });
+    
+</script>
+</html>

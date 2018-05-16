@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>项目详细页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <style type="text/css">
+
+        
+        .materail-create__btn {
+            color: #3ca2fc;
+            font-size: .7rem;
+        }
+        .materail-create__header {
+            background-color: #fff;
+            color: #333333;
+            padding: 0 .5rem;
+            border-bottom: 1px solid #eee;
+        }
+        .materail-create__header a {
+            color: #333333;
+        }
+        .materail-create {
+            padding: .5rem 1rem;
+        }
+
+        .materail-create__detail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .materail-create__item {
+            width: 48%;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .materail-create__item:nth-child(odd){
+            margin-right: 4%;
+        }
+        .materail-create__item .tech-icon{
+            color: #7f7f7f;
+        }
+        .icon-samll {
+            font-size: 1.5rem;
+        }
+        .icon-big {
+            font-size: 3rem;
+        }
+        .materail-create__item-title {
+            font-size: .8rem;
+            color: #333333;
+        }
+        .materail-create__list {
+            background-color: #ececec; 
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: row;
+            display: flex;
+            padding: .5rem;
+            min-height: 8rem;
+        }
+        .materail-create__list--item {
+            width: 45%;
+            overflow: hidden;
+            height: 3rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        .materail-create__list--item:nth-child(1) {
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+        }
+        .materail-create__list--item:nth-child(3) {
+            margin-right: .5rem;
+        }
+        .materail-create__list--caption {
+            width: 100%;
+            text-align: left;
+            font-size: .7rem;
+            margin-top: .5rem;
+            color: #333333;
+        }
+        .materail-create__list--caption small {
+            color: #aeaeae;
+            font-size: .6rem;
+            display: block;
+        }
+        .align-center {
+            align-items: center;
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav materail-create__header" id="aui-header">
+        <a class="aui-btn aui-pull-left" tapmode onclick="closeFrame('material-create')">
+            <span class="tech-icon_jiantou"></span>
+        </a>
+        <div class="aui-title">北京植物园生长观察报告...</div>
+        <a class="aui-btn aui-pull-right" tapmode onclick="toggleFrame('material-create-menu')">
+            <span class="tech-icon_diandian"></span>
+        </a>
+    </header>
+    <section class="materail-create">
+        <div class="aui-searchbar c-search" id="search">
+          <div class="aui-searchbar-input aui-border-radius c-search__redirect" onclick="openWin('search-home')">
+              <i class="aui-iconfont aui-icon-search"></i>
+              <span>项目搜索</span>
+          </div>
+        </div>
+        <div class="materail-create__detail">
+            <div class="materail-create__item">
+                <i class="tech-icon_wenjianjia tech-icon icon-samll"></i>
+                <div class="materail-create__item-title">项目文件夹</div>
+            </div>
+            <div class="materail-create__item">
+                <i class="tech-icon_wenjianjia_geren tech-icon icon-samll"></i>
+                <div class="materail-create__item-title">个人文件夹</div>
+            </div>
+             <div class="materail-create__item"> 
+                <div class="materail-create__list">
+                    <div class="materail-create__list--item" style="background-image: url(../image/material/m-1.jpg);"></div>
+                    <div class="materail-create__list--item" style="background-image: url(../image/material/m-2.jpg);"></div>
+                    <div class="materail-create__list--item" style="background-image: url(../image/material/m-3.jpg);"></div>
+                    <div class="materail-create__list--item" style="background-image: url(../image/material/m-4.jpg);"></div>
+                </div>
+                <div class="materail-create__list--caption">化学物质实验报告<small>90项</small></div>
+            </div>
+             <div class="materail-create__item">
+                <div class="materail-create__list  align-center">
+                    <div class="materail-create__list--item" style=""><i class="tech-icon_word tech-icon icon-big"></i></div> 
+                </div>
+                <div class="materail-create__list--caption">化学物质实验报告
+                    <small>5项</small>
+                </div>
+            </div>
+            <div class="materail-create__item">
+                <div class="materail-create__list align-center">
+                    <div class="materail-create__list--item" style=""><i class="tech-icon_word tech-icon icon-big"></i></div> 
+                </div>
+                <div class="materail-create__list--caption">pm2.5测试报告
+                    <small>13项</small>
+                </div>
+            </div>
+            <div class="materail-create__item">
+                <div class="materail-create__list  align-center">
+                    <div class="materail-create__list--item" style=""><i class="tech-icon_wenben tech-icon icon-big"></i></div> 
+                    <div class="materail-create__list--item" style=""><i class="tech-icon_word  tech-icon icon-big"></i></div> 
+                    <div class="materail-create__list--item" style=""><i class="tech-icon_excel  tech-icon  icon-big"></i></div> 
+                </div>
+                <div class="materail-create__list--caption">生活大爆炸
+                    <small>377</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+<script type="text/javascript" src="../script/api.js" ></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+
+    }
+    
+</script>
+</html>
