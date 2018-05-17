@@ -54,3 +54,15 @@ input[type="text"]{
   padding-top: 20px;
   margin: auto;
 }
+
+/*btn*/
+.aui-btn.module-btn{
+  background: #f9f9f9;
+  border: 1px solid #d4d4d4;
+  width: 90%;
+  height: 2rem;
+  line-height: 2rem;
+}
+.blue-border{
+  border-color: #3ca2fc;
+}

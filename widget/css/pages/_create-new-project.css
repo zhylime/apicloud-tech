@@ -23,13 +23,3 @@
   padding-left: 0.75rem;
   line-height: 2.2rem;
 }
-.p-create-new-project .aui-btn{
-  background: #f9f9f9;
-  border: 1px solid #d4d4d4;
-  width: 90%;
-  height: 2rem;
-  line-height: 2rem;
-}
-.p-create-new-project .aui-btn.blue-border{
-  border-color: #3ca2fc;
-}
