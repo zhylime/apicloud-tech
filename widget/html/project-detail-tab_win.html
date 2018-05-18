@@ -24,7 +24,7 @@
      <div class="aui-tab project-tab__option" id="project-tab">
         <div class="aui-tab-item aui-active" data-url="project-detail-report">报告</div>
         <div class="aui-tab-item" data-url="project-detail-material">素材</div>
-        <div class="aui-tab-item" data-url="project-detail-report">消息</div>
+        <div class="aui-tab-item" data-url="msg-main" >消息</div>
         <div class="aui-tab-item" data-url="project-detail-member">成员</div>
     </div>
 </body>
@@ -84,6 +84,13 @@
     function randomSwitchBtn( index ) {
         api.setFrameGroupIndex({
             name: 'group-tab',
+            index: index
+        });
+    }
+
+    function randomSwitchFrame( index ) {
+        api.setFrameGroupIndex({
+            name: 'group',
             index: index
         });
     }

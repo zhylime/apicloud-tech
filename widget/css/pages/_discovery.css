@@ -17,7 +17,7 @@
   position: absolute;
   background: rgba(0,0,0,0.4);
   color: white;
-  font-size: 1.6rem;
+  font-size: .8rem;
   line-height:50px;
   width: 100%;
   height: 50px;
@@ -38,19 +38,28 @@
 }
 
 .p-discovery__menu .icon{
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 60px;
 }
 .p-discovery__menu--item a.active{
   border-bottom: 4px solid #3ca2fc;
 
 }
+.p-discovery__menu--item span {
+  font-size: .8rem;
+}
+
 /*filters*/
 .p-discovery__filters{
   margin: 10px 0;
 }
+
+.p-discovery__filters span{
+  font-size: .8rem;
+}
+
 .p-discovery__filters i{
-  font-size: 0.4rem;
+  font-size: 0.32rem;
   margin-left: 2px;
 }
 
@@ -62,6 +71,7 @@
   border-left: 4px solid #3ca2fc;
   padding-left: 10px;
   margin-bottom: 20px;
+  font-size: .8rem!important;
 }
 .p-discovery__favorite .swiper-slide{
   width: 38%;

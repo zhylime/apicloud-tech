@@ -30,7 +30,7 @@
             <i class="tech-icon_img"></i>
             <div class="aui-grid-label">像素</div>
           </div>
-          <div class="aui-col-xs-3" onclick="openFrame('material-create')">
+          <div class="aui-col-xs-3" onclick="openFrame('material-create'); closeFrame('overlay-create-material')">
             <i class="tech-icon_sucai"></i>
             <div class="aui-grid-label">我的素材</div>
           </div>
@@ -38,7 +38,7 @@
         <div class="aui-row c-content__create--close">
           <div class="aui-col-xs-4">
           </div>
-          <div class="aui-col-xs-4" onclick="closeCreateOverlay()">
+          <div class="aui-col-xs-4" onclick="closeFrame('overlay-create-material')">
             <i class="tech-icon_jia_close"></i>
           </div>
           <div class="aui-col-xs-4">
@@ -48,12 +48,4 @@
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript" src="../script/common.js" ></script>
-<script type="text/javascript">
-  // close overlay
-function closeCreateOverlay(){
-    api.closeFrame({
-        name: 'overlay-create-material'
-    });
-};
-</script>
 </html>
