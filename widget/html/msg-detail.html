@@ -47,15 +47,26 @@
             margin-bottom: 3rem;
         }
 
-        .msg-comments__header, .msg-comments__header span {
+        .msg-comments__header {
             font-size: .8rem;
             color: #333333;
-            display: inline-block;
+            display: block;
         }
-        .msg-comments__header span
+        .msg-comments__header .aui-tab-item
         {
-            border-bottom: 3px solid #3ca2fc;
+            font-size: .8rem;
+            color: #333333;
             padding-bottom: .5rem;
+            width: 30%;
+            display: inline-block;
+            text-align: left;
+        }
+        .msg-comments__header .aui-tab-item.aui-active {
+            border: none;
+        }
+        .msg-comments__header .aui-tab-item.aui-active span{
+            border-bottom: 3px solid #3ca2fc;
+            color: #333333;
         }
         .msg-comments__content:nth-child(1) {
             border-top: 1px solid rgba(139,139,139,0.2);
@@ -193,8 +204,9 @@
     </section>
 
     <section class="msg-comments aui-margin-t-5">
-        <div class="msg-comments__header">
-            <span>全部回复</span>
+        <div class="msg-comments__header aui-tab" id="msg-tab">
+            <div class="aui-tab-item"><span>全部回复</span></div>
+            <div class="aui-tab-item"><span>只看楼主</span></div>
         </div>
 
         <article class="msg-comments__content aui-margin-t-10 aui-margin-b-10">
@@ -316,11 +328,18 @@
 
 </body>
 <script type="text/javascript" src="../script/api.js" ></script>
+<script type="text/javascript" src="../wgt/aui/script/aui-tab.js" ></script>
 <script type="text/javascript">
     apiready = function(){
         api.parseTapmode();
 
     }
+    var tab = new auiTab({
+        element:document.getElementById("msg-tab"),
+    },function(ret){
+      console.log(ret);
+    });
+
     // close frame
     function closeFrame(name){
         api.closeFrame({
