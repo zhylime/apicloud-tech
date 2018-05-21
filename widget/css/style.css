@@ -66,3 +66,7 @@ input[type="text"]{
 .blue-border{
   border-color: #3ca2fc;
 }
+.input-border{
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
