@@ -1,0 +1,76 @@
+<!-- 编辑报告 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>编辑报告</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+</head>
+<style>
+  .richTextEdirot{
+    height: 200px;
+  }
+</style>
+<body class="frame_container">
+  <form>
+    <div class="input-border aui-padded-l-10"><input type="text" name="projectName" placeholder="请输入项目名称" value="当前项目名称"></div>
+    <!-- <div class="input-border aui-padded-l-10"><div class="richTextEditor" onclick="openRichTextEditor()"></div></div> -->
+  </form>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+      var demo = api.require('richText');
+      demo.openTextEditor({
+        title: "报告编辑",
+        html: "<p>当前报告编辑的文本</p>",
+        placeholder: "输入报告编辑"
+      }, function(ret, err){
+        console.log(JSON.stringify(ret) + ", " + JSON.stringify(err));
+      });
+
+      fnReady();
+      // openRichTextEditor();
+    };
+    function startRecoder(){
+
+        var obj = api.require('speechRecognizer');
+        obj.record({
+                vadbos : 5000,
+                vadeos : 5000,
+                rate : 16000
+
+        },function(ret,err){
+            if(ret.status){
+                api.alert({msg:'录音成功'});
+            }else{
+                api.alert({msg:'录音失败'});
+            }
+        });
+    }
+    function openRichTextEditor(){
+      var demo = api.require('richText');
+      demo.openTextEditor({
+        rect: {
+            x: 0,
+            y: $api.dom('.richTextEditor').offsetTop,
+            w: api.winWidth,
+            h: $api.dom('.richTextEditor').offsetHeight
+        },
+        title: "报告编辑",
+        html: "<p>当前报告编辑的文本</p>",
+        placeholder: "输入报告编辑"
+      }, function(ret, err){
+        console.log(JSON.stringify(ret) + ", " + JSON.stringify(err));
+      });
+    }
+
+</script>
+</html>
