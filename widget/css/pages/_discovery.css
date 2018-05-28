@@ -3,9 +3,7 @@
 .p-discovery__slider{
   max-height: 200px;
 }
-.p-discovery__slider .aui-slide-node img{
-  height: auto;
-}
+
 .p-discovery__slider .aui-slide-page-active{
   background: white;
 }
