@@ -1,7 +1,7 @@
 /*page - discovery*/
 /*slider*/
 .p-discovery__slider{
-  max-height: 200px;
+  max-height: 160px;
 }
 .p-discovery__slider .aui-slide-node img{
   height: auto;
