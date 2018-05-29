@@ -3,7 +3,7 @@ body {
     background-color: #fff;
 }
 .msg-main {
-	padding: .5rem 1rem; 
+	padding: .2rem 1rem; 
 }
 
 .msg-main__header .aui-list, .msg-main__header .aui-list-item {
@@ -23,9 +23,16 @@ body {
 	font-size: .6rem;
 }
 
-.msg-main__content .aui-list-item-title {
-	line-height: 1.8rem;
+.msg-main__content .aui-list-item-inner {
+	padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
 }
+
+.msg-main__content .aui-list-item-title {
+	line-height: 1.6rem;
+	font-size: .7rem
+}
+
 .msg-main__content .aui-info .aui-info-item {
 	font-size: .6rem;
 }

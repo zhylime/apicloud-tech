@@ -1,4 +1,3 @@
-<!-- 报告 -->
 <!doctype html>
 <html>
 <head>
@@ -8,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css" />
     <link rel="stylesheet" type="text/css" href="../css/api.css" />
     <link rel="stylesheet" type="text/css" href="../css/components/_project.css" />
+    <script type="text/javascript" src="../script/zepto.min.js"></script>
 </head>
 <body>
     <header class="aui-bar aui-bar-nav project-tab__header" id="aui-header">
@@ -23,7 +23,7 @@
         </a>
     </header>
      <div class="aui-tab project-tab__option" id="project-tab">
-        <div class="aui-tab-item aui-active" data-url="project-detail-report">报告</div>
+        <div class="aui-tab-item" data-url="project-detail-report">报告</div>
         <div class="aui-tab-item" data-url="project-detail-material">素材</div>
         <div class="aui-tab-item" data-url="msg-detail-without-header" >消息</div>
         <div class="aui-tab-item" data-url="project-detail-member">成员</div>
@@ -41,10 +41,13 @@
         fnInitTabGroup();
 
     };
+
     var tab = new auiTab({
         element:document.getElementById("project-tab"),
+        index: 3,
+        repeatClick: false
     },function(ret){
-
+        
         randomSwitchBtn(ret.index - 1);
     });
 
@@ -75,7 +78,7 @@
                 w: api.winWidth,
                 h: 'auto'
             },
-            index: 0,
+            index: 2,
             frames: frames
         }, function (ret, err) {
         });

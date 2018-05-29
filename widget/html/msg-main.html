@@ -36,7 +36,7 @@
     <article class="msg-main">
         <div class="aui-content aui-margin-b-15 msg-main__content">
             <ul class="aui-list aui-media-list">
-                <li class="aui-list-item" onclick="openFrame('msg-detail')">
+                <li class="aui-list-item" onclick="openWin('project-detail-tab_win-msg');">
                     <div class="aui-media-list-item-inner">
                         <div class="aui-list-item-inner">
                             <div class="aui-list-item-text">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="aui-list-item" onclick="openFrame('msg-detail')">
+                <li class="aui-list-item" onclick="openWin('project-detail-tab_win-msg');">
                     <div class="aui-media-list-item-inner">
                         <div class="aui-list-item-inner">
                             <div class="aui-list-item-text">
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="aui-list-item" onclick="openFrame('msg-detail')">
+                <li class="aui-list-item" onclick="openWin('project-detail-tab_win-msg');">
                     <div class="aui-media-list-item-inner">
                         <div class="aui-list-item-inner">
                             <div class="aui-list-item-text">
@@ -111,25 +111,20 @@
 
     }
     // open frame
-    function openFrame(name){
-        api.openFrame({
+   function openWin(name){
+        var delay = 0;
+        if(api.systemType != 'ios'){
+            delay = 30;
+        }
+        api.openWin({
             name: ''+name+'',
             url: ''+name+'.html',
-            scrollEnabled: true,
-            rect: {
-                x: 0,
-                y: 0,
-                w: 'auto',
-                h: 'auto'
-            },
-            index: 1,
-            animation : {
-                type : 'movein',
-                subType : 'from_right',
-                duration : 300
-            },
+            bounces:false,
+            delay: delay,
+            slidBackEnabled:true,
+            vScrollBarEnabled:false
         });
-    };
+    }
 
 </script>
 </html>

@@ -1,15 +1,15 @@
 header { background-color: #fff; }
-header ul li { height: 40px; line-height: 40px; text-align: center; display: none; color: #323237; position: relative;font-size: 18px;  }
+header ul li { height: 2.25rem; line-height: 2.25rem; text-align: center; display: none; color: #323237; position: relative;font-size: 18px;  }
 header ul li.active { display: block; }
 #footer{  background-color: #f2f2f2; }
-#footer ul li {  padding-top: .6rem; padding-bottom: 10px; position:relative; text-align: center; color: #c0c8cf; font-size: .7rem}
-#footer ul li span { display: block; font-size: 1.2rem; line-height: 1.4rem; color: #c0c8cf}
+#footer ul li {  padding-top: .3rem; padding-bottom: .3rem; position:relative; text-align: center; color: #c0c8cf; font-size: .6rem}
+#footer ul li span { display: block; font-size: 1rem; line-height: 1.4rem; color: #c0c8cf}
 #footer ul li.active { color: #5b7b97; }
 #footer ul li.active span { color: #5b7b97; }
-#footer ul li:nth-child(1) span { font-size: 1rem}
-#footer ul li:nth-child(3) span { font-size: 2.5rem; top: 8px; position: relative; color: #3ca2fc}
-#footer ul li .aui-dot { top: .7rem; left: 58%; width: .5rem; height: .5rem}
-#footer ul li .aui-badge { top: .3rem; left: 58%; min-width: 1rem; height: 1rem; border-radius: 1rem; line-height: 1rem; }
+#footer ul li:nth-child(1) span { font-size: .8rem}
+#footer ul li:nth-child(3) span { font-size: 1.8rem; top: 10px; position: relative; color: #3ca2fc}
+#footer ul li .aui-dot { top: .5rem; left: 58%; width: .4rem; height: .4rem}
+#footer ul li .aui-badge { top: .2rem; left: 58%; min-width: .8rem; height: .8rem; border-radius: .8rem; line-height: .9rem;font-size: .5rem}
 
 
 
