@@ -83,6 +83,10 @@ td,th {
 	font-family: "tech_iconfont";
 	src: url('./fonts/tech-iconfont.ttf') format('truetype');
 }
+@font-face {
+  font-family: "tech_icon";
+  src: url('./fonts/tech-font.ttf') format('truetype');
+}
 
 [class^="tech-"], [class*=" tech-"] {
   font-family: 'tech_iconfont' !important;
@@ -95,6 +99,27 @@ td,th {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'tech_icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-weibo:before {
+  content: "\e800";
+}
+.icon-wechat:before {
+  content: "\e801";
+}
+.icon-qq:before {
+  content: "\e802";
 }
 
 .tech-icon-editor:before {
