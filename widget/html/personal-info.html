@@ -1,0 +1,106 @@
+<!-- 我的 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>个人信息</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pages/_my.css"/>
+    <style type="text/css">
+      .aui-grid
+     {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .aui-radio, .aui-checkbox {
+        width: .9rem;
+        height: .9rem;
+      }
+      .aui-list .aui-list-item-input {
+        padding-right: 0;
+      }
+      .frame_container {
+        padding-top: 0;
+      }
+      .color-blue {
+        color: #3ca2fc;
+      }
+      .aui-list-item {
+        font-size: .8rem;
+        border-bottom: 1px solid #e5e5e5!important;
+        padding: .5rem 0!important;
+      }
+      .aui-list label {
+        line-height: .9rem;
+      }
+    </style>
+</head>
+<body class="frame_container">
+  <header>
+    <div class="aui-grid">
+      <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_jiantou" onclick="closeFrame('personal-info')"></i></div>
+      <div class="aui-col-xs-8">个人信息</div>
+      <div class="aui-col-xs-2" tapmode >
+          <span class="color-blue">保存</span>
+      </div>
+    </div>
+  </header>
+  <ul class="aui-list aui-form-list">
+      <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                  学校全称
+              </div>
+              <div class="aui-list-item-input">
+                  <input type="text" placeholder="如: 北京第六十中学">
+              </div>
+          </div>
+      </li>  
+      <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                  真实姓名
+              </div>
+              <div class="aui-list-item-input">
+                  <input type="text" >
+              </div>
+          </div>
+      </li> 
+      <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                  手机电话
+              </div>
+              <div class="aui-list-item-input">
+                  <input type="text" >
+              </div>
+          </div>
+      </li>  
+      <li class="aui-list-item">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                 注册身份
+              </div>
+              <div class="aui-list-item-input">
+                 <label><input class="aui-radio" type="radio" name="option"> 学生</label>
+                 <label><input class="aui-radio" type="radio" name="option" checked=""> 家长</label>
+                 <label><input class="aui-radio" type="radio" name="option"> 教师</label>
+                 <label><input class="aui-radio" type="radio" name="option"> 专家</label>
+              </div>
+          </div>
+      </li>    
+    </ul>
+
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</html>
