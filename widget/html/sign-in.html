@@ -1,0 +1,82 @@
+<!-- 登陆 sign in-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/pages/_sign-in.css"/>
+        <style type="text/css">
+      .frame_container {
+        padding-top: 0;
+      }
+      .aui-grid [class*=aui-col-] {
+        padding: .5rem 0 1rem;
+      }
+      .general-btn{
+        background: #f6f6f6;
+        border: none;
+      }
+      .general-btn.active{
+        background: none;
+      }
+    </style>
+</head>
+<body class="frame_container p-sign-in">
+  <header>
+      <div class="aui-grid">
+        <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_close" onclick="closeFrame('sign-in')"></i></div>
+        <div class="aui-col-xs-8">登陆科创足迹</div>
+        <div class="aui-col-xs-2 aui-text-right aui-padded-r-10 txt-blue">注册</div>
+      </div>
+  </header>
+  <form class="aui-padded-l-15 aui-padded-r-15">
+    <ul class="aui-list aui-form-list">
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                  用户名
+              </div>
+              <div class="aui-list-item-input aui-padded-l-10 no-border">
+                  <input type="text" name="projectName" placeholder="请输入用户名">
+              </div>
+          </div>
+      </li>
+
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-label">
+                  密&nbsp;&nbsp;&nbsp;码
+              </div>
+              <div class="aui-list-item-input aui-padded-l-10 no-border">
+                  <input type="text" name="projectName" placeholder="请输入密码">
+              </div>
+          </div>
+      </li>
+
+      <hr class="aui-hr bg-black">
+
+      <button class="general-btn aui-margin-t-15 aui-margin-b-10">登陆</button>
+      <div class="aui-text-center"><a class="text-blue aui-font-size-12" href="javascript:void(0);">使用其他方式登陆</a></div>
+
+
+    </ul>
+  </form>
+  <div class="aui-text-center p-sign-in--legal aui-font-size-12">登陆代表您已同意<a href="javascript:void(0);">《科创足迹使用说明》</a></div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        $api.fixStatusBar( $api.dom('header') );
+        fnReady();
+    };
+
+</script>
+</html>

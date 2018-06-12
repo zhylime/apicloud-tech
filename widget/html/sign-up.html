@@ -1,0 +1,38 @@
+<!-- 注册 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+</head>
+<body class="frame_container">
+  <header>
+    <div class="aui-grid">
+      <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_jiantou" onclick="closeFrame('sign-up')"></i></div>
+      <div class="aui-col-xs-8">注册</div>
+    </div>
+  </header>
+  <div class="aui-tab" id="tab">
+    <div class="aui-tab-item aui-active">1 输入手机号</div>
+    <div class="aui-tab-item"><i class="tech-icon_jiantou right-arrow"></i></div>
+    <div class="aui-tab-item">2 输入验证码</div>
+    <div class="aui-tab-item"><i class="tech-icon_jiantou right-arrow"></i></div>
+    <div class="aui-tab-item">3 设置密码</div>
+  </div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        fnReady();
+    };
+
+</script>
+</html>
