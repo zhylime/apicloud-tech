@@ -19,13 +19,48 @@
       <div class="aui-col-xs-8">注册</div>
     </div>
   </header>
-  <div class="aui-tab" id="tab">
-    <div class="aui-tab-item aui-active">1 输入手机号</div>
-    <div class="aui-tab-item"><i class="tech-icon_jiantou right-arrow"></i></div>
-    <div class="aui-tab-item">2 输入验证码</div>
-    <div class="aui-tab-item"><i class="tech-icon_jiantou right-arrow"></i></div>
-    <div class="aui-tab-item">3 设置密码</div>
-  </div>
+  <form class="aui-padded-l-15 aui-padded-r-15">
+    <ul class="aui-list aui-form-list">
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-input aui-padded-l-10 border-b-grey">
+                  <input type="text" name="phoneNumber" placeholder="输入手机号">
+              </div>
+          </div>
+      </li>
+
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-input aui-padded-l-10 border-b-grey aui-grid">
+                <div class="aui-col-xs-6 aui-padded-t-0 aui-padded-b-0 float-none"><input type="text" name="pin" placeholder="输入验证码" ></div>
+                <div class="aui-col-xs-6 aui-padded-t-0 aui-padded-b-0 float-none"><button>发送验证码</button></div>
+
+              </div>
+
+          </div>
+      </li>
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-input aui-padded-l-10 border-b-grey">
+                  <input type="text" name="projectName" placeholder="设置密码">
+              </div>
+          </div>
+      </li>
+      <li class="aui-list-item aui-margin-b-10">
+          <div class="aui-list-item-inner">
+              <div class="aui-list-item-input aui-padded-l-10 border-b-grey">
+                  <input type="text" name="projectName" placeholder="确认密码">
+              </div>
+          </div>
+      </li>
+
+      <!-- <hr class="aui-hr bg-black"> -->
+
+      <button class="general-btn aui-margin-t-15 aui-margin-b-10">注册</button>
+
+    </ul>
+  </form>
+
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript" src="../script/common.js"></script>
