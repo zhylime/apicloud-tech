@@ -17,9 +17,12 @@
 	line-height: 1.2rem:
 }
 
-.c-content__pic {
-	height: 3.5rem;
+.c-content__text {
+	font-size: .6rem;
+	color: #8b8b8b;
+	line-height: 1.5;
 }
+
 
 .c-content__pic--item {
 	height: 3.5rem;

@@ -1,0 +1,101 @@
+<!-- 项目首页 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>我的足迹</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_content.css"/>
+    <style type="text/css">
+      .aui-grid,
+      .p-my--list--item:nth-last-of-type(1) {
+        border-bottom: 1px solid #e5e5e5;
+      }
+    
+      .frame_container {
+        padding-top: 0;
+      }
+      .c-content__detail-status{
+        color: #363636;
+      }
+      article.c-content {
+        margin-top: .5rem;
+      }
+    
+    </style>
+</head>
+<body class="frame_container">
+  <header>
+    <div class="aui-grid">
+      <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_jiantou" onclick="closeFrame('history')"></i></div>
+      <div class="aui-col-xs-8">我的足迹</div>
+    </div>
+  </header>
+    <article class="c-content" onclick="openWin('project-detail-tab_win')">
+      <h2 class="c-content__title aui-margin-b-5">北京植物园生长观察报告</h2>
+      <div class="c-content__pic aui-row">
+        <div class=" c-content__pic--item aui-col-5" style="background-image:url(../image/project/pic_1.jpg);"></div>
+        <div class=" c-content__pic--item aui-col-5" style="background-image:url(../image/project/pic_2.jpg);"></div>
+        <div class=" c-content__pic--item aui-col-5" style="background-image:url(../image/project/pic_3.jpg);"></div>
+        <div class="aui-col-5"></div>
+        <div class="aui-col-5"></div>
+      </div>
+      <div class="c-content__detail aui-margin-t-10 aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time txt-grey">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            作者：科学实验室
+          </div>
+      </div>
+    </article>
+
+    <article class="c-content" onclick="openWin('project-detail-tab_win')">
+      <h2 class="c-content__title">景区研学探索记录</h2>
+      <div class="c-content__pic aui-row">
+        <div class=" c-content__pic--item aui-col-5" style="background-image:url(../image/material/m-5.jpg);"></div>
+        <div class="aui-col-70p c-content__text">
+          从大禹治水、卧薪尝胆，到《兰亭集序》、东山再起，从“亘古男儿一放翁”到心学大家王阳明再到近现代的蔡元培、鲁迅、秋瑾...
+        </div>
+      </div>
+      <div class="c-content__detail aui-margin-t-10 aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            作者：姚欣哲
+          </div>
+      </div>
+    </article>
+    <article class="c-content" onclick="openWin('project-detail-tab_win')">
+      <h2 class="c-content__title">喀斯特地貌研究性学习笔记</h2>
+      <div class="c-content__pic aui-row">
+        <div class="aui-col-90p c-content__text">
+          从大禹治水、卧薪尝胆，到《兰亭集序》、东山再起，从“亘古男儿一放翁”到心学大家王阳明再到近现代的蔡元培、鲁迅、秋瑾...
+        </div>
+      </div>
+      <div class="c-content__detail aui-margin-t-10 aui-row">
+          <div class="aui-col-xs-6 c-content__detail-time">
+            2018-09-18 13:22
+          </div>
+          <div class="aui-col-xs-6 c-content__detail-status">
+            作者：十度管理局
+          </div>
+      </div>
+    </article>
+
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        fnReady();
+    };
+
+</script>
+</html>
