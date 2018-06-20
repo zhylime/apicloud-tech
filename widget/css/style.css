@@ -17,7 +17,9 @@ html,body {  font-size:20px; height:100%; }
 input[type="text"]{
   padding: 0 10px;
 }
-
+.txt-white{
+  color: #fff !important;
+}
 .txt-grey{
   color: #8b8b8b !important;
 }
@@ -66,6 +68,9 @@ input[type="text"]{
 }
 .bg-light-gray{
   background: #f6f6f6 !important;
+}
+.bg-cornflower-blue{
+  background: #6195ED !important;
 }
 /*btn*/
 .general-btn{
