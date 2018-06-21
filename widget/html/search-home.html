@@ -9,6 +9,11 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
     <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <style type="text/css">
+    .frame_container {
+        padding-top: 40px;
+      }
+    </style>
 </head>
 <body class="frame_container">
     <div class="aui-searchbar c-search" id="search">
@@ -29,7 +34,6 @@
 <script type="text/javascript">
     apiready = function() {
         fnReady();
-        $api.fixStatusBar( $api.dom('#search') );
     };
     
     var searchBar = document.querySelector(".aui-searchbar");
