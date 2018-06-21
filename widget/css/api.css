@@ -100,7 +100,7 @@ td,th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-[class^="icon-"], [class*=" icon-"] {
+[class^="t-icon-"], [class*=" t-icon-"] {
   font-family: 'tech_icon' !important;
   speak: none;
   font-style: normal;
@@ -112,13 +112,13 @@ td,th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-weibo:before {
+.t-icon-weibo:before {
   content: "\e800";
 }
-.icon-wechat:before {
+.t-icon-wechat:before {
   content: "\e801";
 }
-.icon-qq:before {
+.t-icon-qq:before {
   content: "\e802";
 }
 
