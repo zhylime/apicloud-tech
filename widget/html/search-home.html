@@ -29,6 +29,7 @@
 <script type="text/javascript">
     apiready = function() {
         fnReady();
+        $api.fixStatusBar( $api.dom('#search') );
     };
     
     var searchBar = document.querySelector(".aui-searchbar");
