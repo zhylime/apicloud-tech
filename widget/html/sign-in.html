@@ -17,7 +17,7 @@
         padding-top: 0;
       }
       .aui-grid [class*=aui-col-] {
-        padding: .5rem 0 1rem;
+        padding: 1rem 0 1rem;
       }
       .general-btn{
         background: #f6f6f6;
@@ -31,9 +31,9 @@
 <body class="frame_container p-sign-in">
   <header>
       <div class="aui-grid">
-        <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_close" onclick="closeFrame('sign-in')"></i></div>
+        <div class="aui-col-xs-2 aui-text-left aui-padded-l-10" onclick="closeFrame('sign-in')"><i class="tech-icon_close"></i></div>
         <div class="aui-col-xs-8">登陆科创足迹</div>
-        <div class="aui-col-xs-2 aui-text-right aui-padded-r-10 txt-blue">注册</div>
+        <div class="aui-col-xs-2 aui-text-right aui-padded-r-10 txt-blue" onclick="closeFrame('sign-in');oepnFrame('sign-up')">注册</div>
       </div>
   </header>
   <form class="aui-padded-l-15 aui-padded-r-15">
