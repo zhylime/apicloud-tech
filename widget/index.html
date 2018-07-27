@@ -23,6 +23,9 @@
             border-radius: .8rem;
             line-height: .9rem;
         }
+        .aui-grid [class*=aui-col-] {
+          padding: 0;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +38,13 @@
                 <div class="aui-grid-label">消息</div></li>
             <li class="border-b" >添加</li>
             <li class="border-b" >发现</li>
-            <li class="border-b" >我的</li>
+            <li class="border-b" >
+              <div class="aui-grid">
+                <div class="aui-col-xs-2 aui-text-left">&nbsp;</div>
+                <div class="aui-col-xs-8">我的</div>
+                <div class="aui-col-xs-2 txt-blue" onclick="openFrame('sign-in')">登陆</div>
+              </div>
+            </li>
         </ul>
     </header>
     <div id="main" class="flex-con">

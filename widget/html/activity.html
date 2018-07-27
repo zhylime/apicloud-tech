@@ -1,0 +1,106 @@
+<!-- 项目首页 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>我的足迹</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../wgt/aui/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/components/_search.css"/>
+    <style type="text/css">
+      .aui-grid,
+      .p-my--list--item:nth-last-of-type(1) {
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .c-content__detail-status{
+        color: #363636;
+      }
+      article.c-content {
+        margin-top: .5rem;
+      }
+      .aui-grid {
+        font-size: .9rem
+      }
+      .aui-grid [class*=aui-col-] {
+        padding-bottom: .5rem;
+      }
+      .activity-detail__footer {
+          padding: .3rem 1rem;
+          background-color: #f8f8f8;
+      }
+      .activity-detail__footer input {
+          font-size: .7rem
+      }
+      .activity-detail__btn {
+          color: #3ca2fc;
+          font-size: .7rem;
+      }
+      .aui-btn-block {
+        height: 1.8rem;
+        line-height: 1.8rem;
+      }
+      .activity-detail__footer .activity-detail__footer--info{
+        color: #f45656;
+      }
+      .activity__content {
+        margin-bottom: 3rem;
+      }
+      .activity__title {
+        margin-bottom: .5rem;
+      }
+      .activity__content p{
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+      }
+      .activity-detail__footer--bg {
+        width: 100%;
+      }
+    </style>
+</head>
+<body class="frame_container">
+  <header>
+    <div class="aui-grid">
+      <div class="aui-col-xs-2 aui-text-left aui-padded-l-10"><i class="tech-icon_jiantou" onclick="closeFrame('activity')"></i></div>
+      <div class="aui-col-xs-8">活动</div>
+    </div>
+  </header>
+
+  <section class="aui-content-padded">
+      <div class="aui-card-list">
+          <div class="aui-card-list-header activity__title">
+              《天文爱好者》星空大会活动通知
+          </div>
+          <div class="aui-card-list-content">
+            <img src="../image/activity.jpg" />
+          </div>
+          <div class="aui-card-list-content-padded activity__content">
+              <p class="aui-margin-t-15">新华社东京7月23日电 日本全国多地23日遭遇罕见高温，因中暑送医的患者达2377人，大阪府、埼玉县等9个府县有13人因中暑死亡。</p>
+              <p class="aui-margin-t-15 aui-margin-b-5">据日本气象厅发布的消息，埼玉县23日最高气温达41.1摄氏度，创日本气温观测史上最高纪录。
+                东京都及岐阜县的最高气温均超过40摄氏度，其中东京气温超过40摄氏度为历史上首次。当天，日本全国927个观测点中近70%的最高气温超过30。</p>
+          </div>
+      </div>
+  </section>
+
+  <footer class="aui-bar aui-bar-tab aui-margin-t-15 activity-detail__footer">
+      <div class="aui-bar-tab-item aui-padded-l-15 aui-text-left" tapmode="" style="width: 50%;">
+        剩余名额（<span class="activity-detail__footer--info"> 4 </span>）
+      </div>
+      <div class="aui-bar-tab-item activity-detail__btn" tapmode="" style="width: 50%;">
+          <div class="aui-btn aui-btn-info aui-btn-block">支付</div>
+      </div>
+  </footer>
+
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/common.js"></script>
+<script type="text/javascript">
+    apiready = function() {
+        fnReady();
+    };
+
+</script>
+</html>
