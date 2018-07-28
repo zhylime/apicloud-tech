@@ -1,5 +1,5 @@
 function fnReady() {
-   
+
 };
 
 function fnStart() {
@@ -36,7 +36,7 @@ function closeCreateOverlay(){
     });
 };
 
-// todo scan QR 
+// todo scan QR
 function openScan(){
 	var FNScanner = api.require('FNScanner');
 	FNScanner.open({
@@ -101,9 +101,9 @@ function removeRecommend(tag){
             $api.remove(recommendContent);
         }
     });
-} 
+}
 
-// close frame 
+// close frame
 function closeFrame(name){
     api.closeFrame({
         name: ''+name+'',
@@ -133,11 +133,15 @@ function openMenuFrame(name){
 
 
 function toggleFrame(name){
-    if(!$api.getStorage(name)){ 
-       openMenuFrame(name); 
+    if(!$api.getStorage(name)){
+       openMenuFrame(name);
         $api.setStorage(name, true);
-    }else { 
+    }else {
         closeFrame(name);
         $api.rmStorage(name);
     }
 }
+
+function closeCurrentFrame(){
+    api.closeFrame({});
+};
