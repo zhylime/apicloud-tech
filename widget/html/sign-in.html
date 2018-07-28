@@ -31,9 +31,9 @@
 <body class="frame_container p-sign-in">
   <header>
       <div class="aui-grid">
-        <div class="aui-col-xs-2 aui-text-left aui-padded-l-10" onclick="closeFrame('/html/sign-in')"><i class="tech-icon_close"></i></div>
+        <div class="aui-col-xs-2 aui-text-left aui-padded-l-10" onclick="closeCurrentFrame()"><i class="tech-icon_close"></i></div>
         <div class="aui-col-xs-8">登陆科创足迹</div>
-        <div class="aui-col-xs-2 aui-text-right aui-padded-r-10 txt-blue" onclick="closeFrame('/html/sign-in');openFrame('sign-up')">注册</div>
+        <div class="aui-col-xs-2 aui-text-right aui-padded-r-10 txt-blue" onclick="closeCurrentFrame();openFrame('sign-up')">注册</div>
       </div>
   </header>
   <form class="aui-padded-l-15 aui-padded-r-15">
@@ -76,6 +76,9 @@
     apiready = function() {
         $api.fixStatusBar( $api.dom('header') );
         fnReady();
+    };
+    function closeCurrentFrame(){
+        api.closeFrame({});
     };
 
 </script>
